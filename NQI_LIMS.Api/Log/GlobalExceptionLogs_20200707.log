@@ -1,0 +1,27 @@
+2020-07-07 11:05:51,261| ERROR 
+Queryable.In(params object[] pkValues): Only one primary key
+【自定义错误】：Queryable.In(params object[] pkValues): Only one primary key 
+【异常类型】：SqlSugarException 
+【异常信息】：Queryable.In(params object[] pkValues): Only one primary key 
+【堆栈调用】：   at SqlSugar.Check.Exception(Boolean isException, String message, String[] args)
+   at SqlSugar.QueryableProvider`1.In[TParamter](TParamter[] pkValues)
+   at NQI_LIMS.Repository.Base.BaseRepository`1.QueryById(Object objId) in C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Repository\BASE\BaseRepository.cs:line 61
+   at NQI_LIMS.Services.BASE.BaseServices`1.QueryById(Object objId) in C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Services\BASE\BaseServices.cs:line 20
+   at NQI_LIMS.Api.Controllers.PM_PLANController.Get(Int32 id) in C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Api\Controllers\CJORACLE\PM_PLANController.cs:line 50
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+--------------------------------
+2020-07-07 21:36:19,057| ERROR 
+test wrong
+--------------------------------
+2020-07-07 21:36:27,347| ERROR 
+test wrong
+--------------------------------

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "NQI_LIMS.FrameWork/1.0.0": {
+        "runtime": {
+          "NQI_LIMS.FrameWork.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NQI_LIMS.FrameWork/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

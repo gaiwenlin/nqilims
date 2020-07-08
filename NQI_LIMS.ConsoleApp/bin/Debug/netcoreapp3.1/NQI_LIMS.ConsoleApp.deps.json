@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "NQI_LIMS.ConsoleApp/1.0.0": {
+        "runtime": {
+          "NQI_LIMS.ConsoleApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NQI_LIMS.ConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
