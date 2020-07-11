@@ -9,6 +9,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using StackExchange.Profiling;
 using System;
+using NQI_LIMS.Common;
+using NQI_LIMS.Model;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace NQI_LIMS.Filter
 {
@@ -30,27 +34,52 @@ namespace NQI_LIMS.Filter
 
         public void OnException(ExceptionContext context)
         {
-            var json = new JsonErrorResponse();
-
-            json.Message = context.Exception.Message;//错误信息
-            var errorAudit = "Unable to resolve service for";
-            if (!string.IsNullOrEmpty(json.Message)&& json.Message.Contains(errorAudit))
+            if (context.Exception.GetType() == typeof(MyException))
             {
-                json.Message = json.Message.Replace(errorAudit, $"（若新添加服务，需要重新编译项目）{errorAudit}");
+                #region 业务异常处理，显示业务提示信息给用户
+                MyException myEx = (context.Exception as MyException);
+                MessageModel<JObject> result = new MessageModel<JObject>();
+                result.msg = context.Exception.Message;
+                result.status = myEx.status;
+
+                if (myEx.data != null)
+                {
+                    result.response = JObject.Parse(JsonConvert.SerializeObject(myEx.data));
+                }
+                else
+                {
+                    result.response = new JObject();
+                }
+                context.Result = result.GetResult();
+                return;
+                #endregion
             }
-            if (_env.IsDevelopment())
+            else
             {
-                json.DevelopmentMessage = context.Exception.StackTrace;//堆栈信息
+                var json = new JsonErrorResponse();
+                json.Message = context.Exception.Message;//错误信息
+                var errorAudit = "Unable to resolve service for";
+                if (!string.IsNullOrEmpty(json.Message) && json.Message.Contains(errorAudit))
+                {
+                    json.Message = json.Message.Replace(errorAudit, $"（若新添加服务，需要重新编译项目）{errorAudit}");
+                }
+                if (_env.IsDevelopment())
+                {
+                    json.DevelopmentMessage = context.Exception.StackTrace;//堆栈信息
+                }
+                string errorMsg = "系统异常，请联系管理员";
+                MessageModel<string> result = new MessageModel<string>();
+                result.msg = errorMsg;
+                result.status = 500;
+                result.response = "";
+                context.Result = result.GetResult();
+
+                MiniProfiler.Current.CustomTiming("Errors：", json.Message);
+                //采用log4net 进行错误日志记录
+                _loggerHelper.LogError(json.Message + WriteLog(json.Message, context.Exception));
+
+                _hubContext.Clients.All.SendAsync("ReceiveUpdate", LogLock.GetLogData()).Wait();
             }
-            context.Result = new InternalServerErrorObjectResult(json);
-
-            MiniProfiler.Current.CustomTiming("Errors：", json.Message);
-
-
-            //采用log4net 进行错误日志记录
-            _loggerHelper.LogError(json.Message + WriteLog(json.Message, context.Exception));
-
-            _hubContext.Clients.All.SendAsync("ReceiveUpdate", LogLock.GetLogData()).Wait();
 
         }
 

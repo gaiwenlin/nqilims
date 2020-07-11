@@ -18,3 +18,13 @@ C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Api\bin\Debug\netcoreapp3.1\NQI_LIMS.Re
 C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Api\bin\Debug\netcoreapp3.1\NQI_LIMS.Repository.dll
 C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Api\bin\Debug\netcoreapp3.1\NQI_LIMS.Repository.pdb
 C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Repository\obj\Debug\netcoreapp3.1\NQI_LIMS.Repository.csproj.CopyComplete
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Api\bin\Debug\netcoreapp3.1\NQI_LIMS.Repository.deps.json
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Api\bin\Debug\netcoreapp3.1\NQI_LIMS.Repository.dll
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Api\bin\Debug\netcoreapp3.1\NQI_LIMS.Repository.pdb
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Repository\obj\Debug\netcoreapp3.1\NQI_LIMS.Repository.csprojAssemblyReference.cache
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Repository\obj\Debug\netcoreapp3.1\NQI_LIMS.Repository.csproj.CoreCompileInputs.cache
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Repository\obj\Debug\netcoreapp3.1\NQI_LIMS.Repository.AssemblyInfoInputs.cache
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Repository\obj\Debug\netcoreapp3.1\NQI_LIMS.Repository.AssemblyInfo.cs
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Repository\obj\Debug\netcoreapp3.1\NQI_LIMS.Repository.csproj.CopyComplete
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Repository\obj\Debug\netcoreapp3.1\NQI_LIMS.Repository.dll
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Repository\obj\Debug\netcoreapp3.1\NQI_LIMS.Repository.pdb

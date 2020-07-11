@@ -68,7 +68,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Content Update="appsettings.json">
+		<Content Update="appsettings.dev.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>
@@ -83,6 +83,6 @@
 	  <Folder Include="Log\Serilog\" />
 	</ItemGroup>
 
-	<ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="http://json.schemastore.org/jovo-language-model" /></VisualStudio></ProjectExtensions>
+	<ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
 
 </Project>

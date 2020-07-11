@@ -25,3 +25,4 @@
 {"Ip":"::1","Url":"/api/user/get/13","Datetime":"2020-07-07 21:36:18","Date":"2020-07-07","Week":"周二"},
 {"Ip":"::1","Url":"/api/user/get/13","Datetime":"2020-07-07 21:36:27","Date":"2020-07-07","Week":"周二"},
 {"Ip":"::1","Url":"/api/role/get/27","Datetime":"2020-07-07 21:40:01","Date":"2020-07-07","Week":"周二"},
+{"Ip":"::1","Url":"/api/pm_plan_sub/getpmplansubbycode","Datetime":"2020-07-11 08:00:45","Date":"2020-07-11","Week":"周六"},

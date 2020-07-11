@@ -1,0 +1,21 @@
+2020-07-11 08:00:48,802| ERROR 
+An unhandled exception has occurred while executing the request.
+--------------------------------
+SqlSugar.SqlSugarException: English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.
+Chinese Message :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，实在找不到原因请先Google错误信息：Unable to connect to any of the specified MySQL hosts..
+   at SqlSugar.AdoProvider.GetDataReaderAsync(String sql, SugarParameter[] parameters)
+   at SqlSugar.QueryableProvider`1.GetDataAsync[TResult](KeyValuePair`2 sqlObj)
+   at SqlSugar.QueryableProvider`1._ToListAsync[TResult]()
+   at NQI_LIMS.Repository.Base.BaseRepository`1.QueryMuch[T,T2,T3,TResult](Expression`1 joinExpression, Expression`1 selectExpression, Expression`1 whereLambda) in D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Repository\BASE\BaseRepository.cs:line 453
+   at NQI_LIMS.Repository.RoleModulePermissionRepository.RoleModuleMaps() in D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Repository\RoleModulePermissionRepository.cs:line 49
+   at NQI_LIMS.Services.RoleModulePermissionServices.RoleModuleMaps() in D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Services\RoleModulePermissionServices.cs:line 69
+   at NQI_LIMS.AuthHelper.PermissionHandler.HandleRequirementAsync(AuthorizationHandlerContext context, PermissionRequirement requirement) in D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Extensions\Authorizations\Policys\PermissionHandler.cs:line 48
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
