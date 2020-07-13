@@ -7,7 +7,7 @@ using SqlSugar;
 namespace NQI_LIMS.Model
 {
     ///<summary>
-    ///
+    ///Ö÷±í
     ///</summary>
     [SugarTable( "PM_PLAN_SUB", "CJORACLE")]
     public class PM_PLAN_SUB
