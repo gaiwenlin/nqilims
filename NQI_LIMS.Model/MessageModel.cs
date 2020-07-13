@@ -1,0 +1,48 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+
+namespace NQI_LIMS.Model
+{
+    /// <summary>
+    /// 通用返回信息类
+    /// </summary>
+    public class MessageModel<T>
+    {
+        /// <summary>
+        /// 状态码
+        /// </summary>
+        public int status { get; set; } = 200;
+        /// <summary>
+        /// 操作是否成功
+        /// </summary>
+        public bool success { get; set; } = false;
+        /// <summary>
+        /// 返回信息
+        /// </summary>
+        public string msg { get; set; } = "服务器异常";
+        /// <summary>
+        /// 返回数据集合
+        /// </summary>
+        public T response { get; set; }
+
+        public ObjectResult GetResult()
+        {
+
+            return new ObjectResult(JsonConvert.SerializeObject(this));
+        }
+
+    }
+
+    public class MyResponse
+    {
+        public static MessageModel<T> Return<T>(T iData, string iHintInfo = "")
+        {
+            MessageModel<T> result = new MessageModel<T>();
+            result.status = StatusCodes.Status200OK;
+            result.msg = iHintInfo;
+            result.response = iData;
+            return result;
+        }
+    }
+}

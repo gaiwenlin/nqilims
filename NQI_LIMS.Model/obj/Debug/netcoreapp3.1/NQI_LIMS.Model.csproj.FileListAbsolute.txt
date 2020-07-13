@@ -1,0 +1,52 @@
+C:\Users\15161\Desktop\FrameWork\Blog.Core\Blog.Core\.1YourProject\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.deps.json
+C:\Users\15161\Desktop\FrameWork\Blog.Core\Blog.Core\.1YourProject\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.dll
+C:\Users\15161\Desktop\FrameWork\Blog.Core\Blog.Core\.1YourProject\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.pdb
+C:\Users\15161\Desktop\FrameWork\Blog.Core\Blog.Core\.1YourProject\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.xml
+C:\Users\15161\Desktop\FrameWork\Blog.Core\Blog.Core\.1YourProject\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Common.dll
+C:\Users\15161\Desktop\FrameWork\Blog.Core\Blog.Core\.1YourProject\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Common.pdb
+C:\Users\15161\Desktop\FrameWork\Blog.Core\Blog.Core\.1YourProject\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.csprojAssemblyReference.cache
+C:\Users\15161\Desktop\FrameWork\Blog.Core\Blog.Core\.1YourProject\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.AssemblyInfoInputs.cache
+C:\Users\15161\Desktop\FrameWork\Blog.Core\Blog.Core\.1YourProject\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.AssemblyInfo.cs
+C:\Users\15161\Desktop\FrameWork\Blog.Core\Blog.Core\.1YourProject\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.csproj.CoreCompileInputs.cache
+C:\Users\15161\Desktop\FrameWork\Blog.Core\Blog.Core\.1YourProject\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.csproj.CopyComplete
+C:\Users\15161\Desktop\FrameWork\Blog.Core\Blog.Core\.1YourProject\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.dll
+C:\Users\15161\Desktop\FrameWork\Blog.Core\Blog.Core\.1YourProject\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.pdb
+C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.deps.json
+C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.dll
+C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.pdb
+C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.xml
+C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Common.dll
+C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Common.pdb
+C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.csprojAssemblyReference.cache
+C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.AssemblyInfoInputs.cache
+C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.AssemblyInfo.cs
+C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.csproj.CoreCompileInputs.cache
+C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.csproj.CopyComplete
+C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.dll
+C:\Users\15161\Desktop\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.pdb
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.deps.json
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.dll
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.pdb
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.xml
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Common.dll
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Common.pdb
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.csprojAssemblyReference.cache
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.csproj.CoreCompileInputs.cache
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.AssemblyInfoInputs.cache
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.AssemblyInfo.cs
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.csproj.CopyComplete
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.dll
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.deps.json
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.xml
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Common.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Model\bin\Debug\netcoreapp3.1\NQI_LIMS.Common.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.csprojAssemblyReference.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.AssemblyInfoInputs.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.AssemblyInfo.cs
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.csproj.CoreCompileInputs.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.csproj.CopyComplete
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Model\obj\Debug\netcoreapp3.1\NQI_LIMS.Model.pdb
