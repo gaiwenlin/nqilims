@@ -28,3 +28,13 @@ D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Services\obj\Debug\netcoreapp
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Services\obj\Debug\netcoreapp3.1\NQI_LIMS.Services.csproj.CopyComplete
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Services\obj\Debug\netcoreapp3.1\NQI_LIMS.Services.dll
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Services\obj\Debug\netcoreapp3.1\NQI_LIMS.Services.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Api\bin\Debug\netcoreapp3.1\NQI_LIMS.Services.deps.json
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Api\bin\Debug\netcoreapp3.1\NQI_LIMS.Services.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Api\bin\Debug\netcoreapp3.1\NQI_LIMS.Services.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Services\obj\Debug\netcoreapp3.1\NQI_LIMS.Services.csprojAssemblyReference.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Services\obj\Debug\netcoreapp3.1\NQI_LIMS.Services.AssemblyInfoInputs.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Services\obj\Debug\netcoreapp3.1\NQI_LIMS.Services.AssemblyInfo.cs
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Services\obj\Debug\netcoreapp3.1\NQI_LIMS.Services.csproj.CoreCompileInputs.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Services\obj\Debug\netcoreapp3.1\NQI_LIMS.Services.csproj.CopyComplete
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Services\obj\Debug\netcoreapp3.1\NQI_LIMS.Services.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Services\obj\Debug\netcoreapp3.1\NQI_LIMS.Services.pdb

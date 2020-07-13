@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.Model\\NQI_LIMS.Model.csproj": {}
+    "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.Model\\NQI_LIMS.Model.csproj": {}
   },
   "projects": {
-    "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.Common\\NQI_LIMS.Common.csproj": {
+    "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.Common\\NQI_LIMS.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.Common\\NQI_LIMS.Common.csproj",
+        "projectUniqueName": "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.Common\\NQI_LIMS.Common.csproj",
         "projectName": "NQI_LIMS.Common",
-        "projectPath": "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.Common\\NQI_LIMS.Common.csproj",
-        "packagesPath": "C:\\Users\\weigu\\.nuget\\packages\\",
-        "outputPath": "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.Common\\obj\\",
+        "projectPath": "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.Common\\NQI_LIMS.Common.csproj",
+        "packagesPath": "C:\\Users\\15161\\.nuget\\packages\\",
+        "outputPath": "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\weigu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\15161\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -105,21 +108,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.Model\\NQI_LIMS.Model.csproj": {
+    "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.Model\\NQI_LIMS.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.Model\\NQI_LIMS.Model.csproj",
+        "projectUniqueName": "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.Model\\NQI_LIMS.Model.csproj",
         "projectName": "NQI_LIMS.Model",
-        "projectPath": "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.Model\\NQI_LIMS.Model.csproj",
-        "packagesPath": "C:\\Users\\weigu\\.nuget\\packages\\",
-        "outputPath": "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.Model\\obj\\",
+        "projectPath": "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.Model\\NQI_LIMS.Model.csproj",
+        "packagesPath": "C:\\Users\\15161\\.nuget\\packages\\",
+        "outputPath": "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\weigu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\15161\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -127,13 +133,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.Common\\NQI_LIMS.Common.csproj": {
-                "projectPath": "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.Common\\NQI_LIMS.Common.csproj"
+              "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.Common\\NQI_LIMS.Common.csproj": {
+                "projectPath": "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.Common\\NQI_LIMS.Common.csproj"
               }
             }
           }
@@ -170,7 +176,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

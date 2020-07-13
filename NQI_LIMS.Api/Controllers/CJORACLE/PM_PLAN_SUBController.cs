@@ -12,7 +12,7 @@ namespace NQI_LIMS.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    [Authorize(Permissions.Name)]
+    //[Authorize(Permissions.Name)]
     public class PM_PLAN_SUBController : ControllerBase
     {
         /// <summary>
