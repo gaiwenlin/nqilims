@@ -7,13 +7,14 @@ using SqlSugar;
 namespace NQI_LIMS.Model.Models
 {
     ///<summary>
-    ///
+    ///½á¹û±í
     ///</summary>
     [SugarTable( "RESULTS", "LIMSORACLE")]
     public class RESULTS
     {
         public RESULTS()
         {
+
         }
         
            public decimal ORIGREC { get; set; }

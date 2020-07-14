@@ -43,3 +43,18 @@ D:\个人文件\个人项目\work\nqilims\NQI_LIMS.IRepository\obj\Debug\netcore
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.IRepository\obj\Debug\netcoreapp3.1\NQI_LIMS.IRepository.csproj.CopyComplete
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.IRepository\obj\Debug\netcoreapp3.1\NQI_LIMS.IRepository.dll
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.IRepository\obj\Debug\netcoreapp3.1\NQI_LIMS.IRepository.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\bin\Debug\netcoreapp3.1\NQI_LIMS.IRepository.deps.json
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\bin\Debug\netcoreapp3.1\NQI_LIMS.IRepository.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\bin\Debug\netcoreapp3.1\NQI_LIMS.IRepository.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\bin\Debug\netcoreapp3.1\NQI_LIMS.Common.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.xml
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\bin\Debug\netcoreapp3.1\NQI_LIMS.Common.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\obj\Debug\netcoreapp3.1\NQI_LIMS.IRepository.csprojAssemblyReference.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\obj\Debug\netcoreapp3.1\NQI_LIMS.IRepository.AssemblyInfoInputs.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\obj\Debug\netcoreapp3.1\NQI_LIMS.IRepository.AssemblyInfo.cs
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\obj\Debug\netcoreapp3.1\NQI_LIMS.IRepository.csproj.CoreCompileInputs.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\obj\Debug\netcoreapp3.1\NQI_LIMS.IRepository.csproj.CopyComplete
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\obj\Debug\netcoreapp3.1\NQI_LIMS.IRepository.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.IRepository\obj\Debug\netcoreapp3.1\NQI_LIMS.IRepository.pdb

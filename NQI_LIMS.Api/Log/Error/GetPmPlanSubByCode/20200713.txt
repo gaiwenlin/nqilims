@@ -1,0 +1,12 @@
+2020-07-13 16:50:27.988 +08:00 [ERR] ORA-00904: "RN": 标识符无效
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "RN": 标识符无效
+   at SqlSugar.AdoProvider.GetDataReader(String sql, SugarParameter[] parameters)
+   at SqlSugar.QueryableProvider`1.GetData[TResult](KeyValuePair`2 sqlObj)
+   at SqlSugar.QueryableProvider`1._ToList[TResult]()
+   at SqlSugar.QueryableProvider`1.ToList()
+   at SqlSugar.QueryableProvider`1.First()
+   at NQI_LIMS.Repository.localhost.PM_PLAN_SUBRepository.GetPmPlanSubByCode(String iCode, String iNum) in D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Repository\CJORACLE\PM_PLAN_SUBRepository.cs:line 30
+2020-07-13 16:50:28.103 +08:00 [ERR] ORA-00904: "RN": 标识符无效
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "RN": 标识符无效
+   at NQI_LIMS.Repository.localhost.PM_PLAN_SUBRepository.GetPmPlanSubByCode(String iCode, String iNum) in D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Repository\CJORACLE\PM_PLAN_SUBRepository.cs:line 35
+   at NQI_LIMS.Services.localhost.PM_PLAN_SUBServices.GetPmPlanSubByCode(String iCodeNum) in D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Services\CJORACLE\PM_PLAN_SUBServices.cs:line 35

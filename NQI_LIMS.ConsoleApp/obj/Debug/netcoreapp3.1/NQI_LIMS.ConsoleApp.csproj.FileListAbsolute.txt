@@ -37,3 +37,16 @@ D:\个人文件\个人项目\work\nqilims\NQI_LIMS.ConsoleApp\obj\Debug\netcorea
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.ConsoleApp\obj\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.pdb
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.ConsoleApp\obj\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.genruntimeconfig.cache
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.ConsoleApp\obj\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.csprojAssemblyReference.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.ConsoleApp\bin\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.exe
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.ConsoleApp\bin\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.deps.json
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.ConsoleApp\bin\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.runtimeconfig.json
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.ConsoleApp\bin\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.runtimeconfig.dev.json
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.ConsoleApp\bin\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.ConsoleApp\bin\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.ConsoleApp\obj\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.csprojAssemblyReference.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.ConsoleApp\obj\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.AssemblyInfoInputs.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.ConsoleApp\obj\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.AssemblyInfo.cs
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.ConsoleApp\obj\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.ConsoleApp\obj\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.ConsoleApp\obj\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.ConsoleApp\obj\Debug\netcoreapp3.1\NQI_LIMS.ConsoleApp.genruntimeconfig.cache

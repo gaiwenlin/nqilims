@@ -28,7 +28,7 @@ namespace NQI_LIMS.Services.localhost
                 iCodeNum.NotAllowNullOrEmpty("抽查批次号");
                 int StringLength = iCodeNum.Length;
                 (iCodeNum.Length <= 4).ThrowException("抽查批次号格式不正确");
-                string mCode = iCodeNum.Substring(0, StringLength);
+                string mCode = iCodeNum.Substring(0, StringLength-4).ToUpper();
                 string mNum = iCodeNum.Substring(StringLength - 4);
                 #endregion
 

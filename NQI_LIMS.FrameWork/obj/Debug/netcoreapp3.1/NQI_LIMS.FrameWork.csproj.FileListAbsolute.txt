@@ -25,3 +25,12 @@ D:\个人文件\个人项目\work\nqilims\NQI_LIMS.FrameWork\obj\Debug\netcoreap
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.dll
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.pdb
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.csprojAssemblyReference.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.FrameWork\bin\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.deps.json
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.FrameWork\bin\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.FrameWork\bin\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.csprojAssemblyReference.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.AssemblyInfoInputs.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.AssemblyInfo.cs
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.csproj.CoreCompileInputs.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.pdb

@@ -61,3 +61,24 @@ D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Extensions\obj\Debug\netcorea
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Extensions\obj\Debug\netcoreapp3.1\NQI_LIMS.Extensions.csproj.CopyComplete
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Extensions\obj\Debug\netcoreapp3.1\NQI_LIMS.Extensions.dll
 D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Extensions\obj\Debug\netcoreapp3.1\NQI_LIMS.Extensions.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.Extensions.deps.json
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.Extensions.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.Extensions.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.Common.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.IRepository.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.IServices.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.Tasks.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.IRepository.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.IServices.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.Tasks.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.Common.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.pdb
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\bin\Debug\netcoreapp3.1\NQI_LIMS.Model.xml
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\obj\Debug\netcoreapp3.1\NQI_LIMS.Extensions.csprojAssemblyReference.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\obj\Debug\netcoreapp3.1\NQI_LIMS.Extensions.AssemblyInfoInputs.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\obj\Debug\netcoreapp3.1\NQI_LIMS.Extensions.AssemblyInfo.cs
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\obj\Debug\netcoreapp3.1\NQI_LIMS.Extensions.csproj.CoreCompileInputs.cache
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\obj\Debug\netcoreapp3.1\NQI_LIMS.Extensions.csproj.CopyComplete
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\obj\Debug\netcoreapp3.1\NQI_LIMS.Extensions.dll
+C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.Extensions\obj\Debug\netcoreapp3.1\NQI_LIMS.Extensions.pdb
