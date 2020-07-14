@@ -8,23 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\15161\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\weigu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.FrameWork\\NQI_LIMS.FrameWork.csproj",
+      "projectUniqueName": "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.FrameWork\\NQI_LIMS.FrameWork.csproj",
       "projectName": "NQI_LIMS.FrameWork",
-      "projectPath": "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.FrameWork\\NQI_LIMS.FrameWork.csproj",
-      "packagesPath": "C:\\Users\\15161\\.nuget\\packages\\",
-      "outputPath": "C:\\D\\8.0 Development\\NQI_LIMS\\NQI_LIMS.FrameWork\\obj\\",
+      "projectPath": "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.FrameWork\\NQI_LIMS.FrameWork.csproj",
+      "packagesPath": "C:\\Users\\weigu\\.nuget\\packages\\",
+      "outputPath": "D:\\个人文件\\个人项目\\work\\nqilims\\NQI_LIMS.FrameWork\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\15161\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\weigu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,7 +28,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -62,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
