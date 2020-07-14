@@ -34,3 +34,8 @@
 {"Ip":"::1","Url":"/api/pm_plan_sub/getpmplansubbycode","Datetime":"2020-07-13 16:54:19","Date":"2020-07-13","Week":"周一"},
 {"Ip":"::1","Url":"/api/pm_plan_sub/getpmplansubbycode","Datetime":"2020-07-13 16:56:52","Date":"2020-07-13","Week":"周一"},
 {"Ip":"::1","Url":"/api/pm_plan_sub/getpmplansubbycode","Datetime":"2020-07-13 16:57:43","Date":"2020-07-13","Week":"周一"},
+{"Ip":"::1","Url":"/api/pm_inspect/getpminspectbycode","Datetime":"2020-07-14 17:35:44","Date":"2020-07-14","Week":"周二"},
+{"Ip":"::1","Url":"/api/pm_inspect/getpminspectbycode","Datetime":"2020-07-14 17:38:01","Date":"2020-07-14","Week":"周二"},
+{"Ip":"::1","Url":"/api/pm_inspect/getpminspectbycode","Datetime":"2020-07-14 17:41:47","Date":"2020-07-14","Week":"周二"},
+{"Ip":"::1","Url":"/api/pm_inspect/getpminspectbycode","Datetime":"2020-07-14 17:43:40","Date":"2020-07-14","Week":"周二"},
+{"Ip":"::1","Url":"/api/pm_inspect/getpminspectbycode","Datetime":"2020-07-14 17:46:13","Date":"2020-07-14","Week":"周二"},

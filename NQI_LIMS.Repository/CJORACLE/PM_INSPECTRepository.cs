@@ -7,7 +7,7 @@ using NQI_LIMS.Repository.Base;
 using System;
 using System.Threading.Tasks;
 
-namespace NQI_LIMS.Repository
+namespace NQI_LIMS.Repository.localhost
 {
    public class PM_INSPECTRepository : BaseRepository<PM_PLAN_SUB>, IPM_INSPECTRepository
     {

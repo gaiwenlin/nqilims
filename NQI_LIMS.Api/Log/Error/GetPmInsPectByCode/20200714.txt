@@ -1,0 +1,8 @@
+2020-07-14 17:43:42.533 +08:00 [ERR] 未查询到抽查任务单信息
+NQI_LIMS.Common.MyException: 未查询到抽查任务单信息
+   at NQI_LIMS.Common.ExtensionMethods.NotAllowNull(Object obj, String hintMsg) in D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Common\ExtensionMethods\ExtensionMethods.cs:line 598
+   at NQI_LIMS.Services.localhost.PM_INSPECTServices.GetPmInsPectByCode(String iCodeNum) in D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Services\CJORACLE\PM_INSPECTServices.cs:line 37
+2020-07-14 17:46:15.633 +08:00 [ERR] 未查询到抽查任务单信息
+NQI_LIMS.Common.MyException: 未查询到抽查任务单信息
+   at NQI_LIMS.Common.ExtensionMethods.NotAllowNull(Object obj, String hintMsg) in D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Common\ExtensionMethods\ExtensionMethods.cs:line 598
+   at NQI_LIMS.Services.localhost.PM_INSPECTServices.GetPmInsPectByCode(String iCodeNum) in D:\个人文件\个人项目\work\nqilims\NQI_LIMS.Services\CJORACLE\PM_INSPECTServices.cs:line 37

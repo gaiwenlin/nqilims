@@ -10,7 +10,7 @@ using NQI_LIMS.Services.BASE;
 using System;
 using System.Threading.Tasks;
 
-namespace NQI_LIMS.Services.CJORACLE
+namespace NQI_LIMS.Services.localhost
 {
     public partial class PM_INSPECTServices : BaseServices<PM_PLAN_SUB>, IPM_INSPECTServices
     {
