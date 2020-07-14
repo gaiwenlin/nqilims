@@ -32,7 +32,7 @@ namespace NQI_LIMS.Services.localhost
                 string mNum = iCodeNum.Substring(StringLength - 4);
                 #endregion
 
-                var mPmPlanSubInfo =  _dal.GetPmPlanSubByCode(mCode,mNum);
+                var mPmPlanSubInfo =  _dal.GetPmPlanSubByCode(mCode,mNum);                 
                 if (mPmPlanSubInfo != null)
                 {
                     var result = new JObject() {
@@ -40,7 +40,6 @@ namespace NQI_LIMS.Services.localhost
                     {"PLAN_CODE",mPmPlanSubInfo.PLAN_CODE},
                     {"LOT_NUM",mPmPlanSubInfo.LOT_NUM}
                      };
-
                     //return result;//自定义返回
                     return JObject.Parse(JsonConvert.SerializeObject(mPmPlanSubInfo));//全部返回
                 }

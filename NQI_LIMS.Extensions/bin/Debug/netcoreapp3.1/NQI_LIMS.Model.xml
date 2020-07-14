@@ -137,12 +137,82 @@
         </member>
         <member name="T:NQI_LIMS.Model.Models.PM_CARY">
             <summary>
-            
+            受检单位信息
             </summary>
         </member>
         <member name="P:NQI_LIMS.Model.Models.PM_CARY.ID">
             <summary>
             ID
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.CARY_CODE">
+            <summary>
+            受检单位编码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.CARY_NAME">
+             <summary>
+            受检单位名称
+             </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.CARY_PRESENT">
+            <summary>
+            受检单位法人代表
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.CARY_ADDR">
+            <summary>
+            受检单位通信地址
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.CARY_ZIP_CODE">
+            <summary>
+            受检单位邮编
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.CARY_LINKMAN">
+            <summary>
+            受检单位联系人
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.CARY_TEL">
+            <summary>
+            受检单位联系电话
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.CARY_RELATED_PRO_ID">
+            <summary>
+            受检单位管理生产企业
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.CARY_OWNERSHIP">
+            <summary>
+            受检单位所属地
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.UNIFIED_SOCIAL_CREDIT_CODE">
+            <summary>
+            统一社会信用代码（营业执照注册号）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.CARY_PROVINCE">
+            <summary>
+            受检单位所属地（省编码）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.CARY_CITY">
+            <summary>
+            受检单位所属地（市编码）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.CARY_COUNTY">
+            <summary>
+            受检单位所属地（区/县编码）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PM_CARY.OPERATOR_LOCATION">
+            <summary>
+            经营者所在地（1：城区，2：城郊结合部，3：乡镇）
             </summary>
         </member>
         <member name="P:NQI_LIMS.Model.Models.Guestbook.id">
@@ -232,12 +302,12 @@
         </member>
         <member name="T:NQI_LIMS.Model.Models.RASCLIENTS">
             <summary>
-            
+            客户
             </summary>
         </member>
         <member name="T:NQI_LIMS.Model.Models.RESULTS">
             <summary>
-            
+            结果表
             </summary>
         </member>
         <member name="T:NQI_LIMS.Model.Models.ModulePermission">
@@ -867,7 +937,97 @@
         </member>
         <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.EC_ID">
             <summary>
-            ID
+            自增id
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.ONLINE_STORE_NAME">
+            <summary>
+            网店名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.ONLINE_STORE_ADDR">
+            <summary>
+            网店通讯地址
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.ONLINE_STORE_POLL_CODE">
+            <summary>
+            网店营业注册码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.ONLINE_STORE_CONTACT">
+            <summary>
+            网店联系方式
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.ONLINE_STORE_LINK">
+            <summary>
+            网店网址链接
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.EC_PLATFORM_NAME">
+            <summary>
+            电商平台名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.EC_PLATFORM_LINK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.ONLINE_ORDER_CODE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.LINKS_WEB_SITES">
+            <summary>
+            商品网址链接（含商品唯一识别号）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.ONLINE_OWNERSHIP">
+            <summary>
+            网店所属地
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.EC_PLATFORM_OWNERSHIP">
+            <summary>
+            平台所属地
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.EC_PLATFORM_PROVINCE">
+            <summary>
+            平台所属地（省编码）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.EC_PLATFORM_CITY">
+            <summary>
+            平台所属地（市编码）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.EC_PLATFORM_COUNTY">
+            <summary>
+            平台所属地（区/县编码）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.ONLINE_PROVINCE">
+            <summary>
+            网店所属地（省编码）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.ONLINE_CITY">
+            <summary>
+            网店所属地（市编码）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.ONLINE_COUNTY">
+            <summary>
+            网店所属地（区/县编码）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.ONLINE_TYPE">
+            <summary>
+            电商类型
             </summary>
         </member>
         <member name="T:NQI_LIMS.Model.PM_EXEC_UINT">
@@ -880,6 +1040,41 @@
             ID
             </summary>
         </member>
+        <member name="P:NQI_LIMS.Model.PM_EXEC_UINT.EXEC_CODE">
+            <summary>
+            抽样单位编码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EXEC_UINT.EXEC_NAME">
+            <summary>
+            抽样单位名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EXEC_UINT.EXEC_ADDR">
+            <summary>
+            抽样单位地址
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EXEC_UINT.EXEC_ZIP_CODE">
+            <summary>
+            抽样单位邮编
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EXEC_UINT.EXEC_LINKMAN">
+            <summary>
+            抽样单位联系人
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EXEC_UINT.EXEC_TEL">
+            <summary>
+            抽样单位联系电话
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_EXEC_UINT.EXEC_FAX">
+            <summary>
+            抽样单位传真
+            </summary>
+        </member>
         <member name="T:NQI_LIMS.Model.PM_OTHER">
             <summary>
             
@@ -890,14 +1085,279 @@
             ID
             </summary>
         </member>
+        <member name="P:NQI_LIMS.Model.PM_OTHER.OTHER_CODE">
+            <summary>
+            其他来源单位编码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_OTHER.OTHER_NAME">
+            <summary>
+            其他来源单位名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_OTHER.OTHER_PRESENT">
+            <summary>
+            其他来源单位法人代表
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_OTHER.OTHER_ADDR">
+            <summary>
+            其他来源单位通信地址
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_OTHER.OTHER_ZIP_CODE">
+            <summary>
+            其他来源单位邮编
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_OTHER.OTHER_LINKMAN">
+            <summary>
+            其他来源单位联系人
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_OTHER.OTHER_TEL">
+            <summary>
+            其他来源单位联系电话
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_OTHER.OTHER_UNIFIED_SOCIAL_CREDIT">
+            <summary>
+            统一社会信用代码（营业执照注册号）
+            </summary>
+        </member>
         <member name="T:NQI_LIMS.Model.PM_PLAN">
             <summary>
-            
+            PM_PLAN 任务表
             </summary>
         </member>
         <member name="P:NQI_LIMS.Model.PM_PLAN.ID">
             <summary>
             ID
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.PLAN_CODE">
+            <summary>
+            任务编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CHECK_COMP">
+            <summary>
+            承检机构编码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CHECK_GOODS">
+            <summary>
+            检测产品
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CONTENTS">
+            <summary>
+            工作内容
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.PLAN_STATE">
+            <summary>
+            任务状态(1.未下达 2.已下达 3.已领取 4.已完成 0.已撤回 5.已上传)
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CHECK_KIND">
+            <summary>
+            任务类型（已作废）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.NOTICE_TIME">
+            <summary>
+            结果通知日期
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.EFFECT_TIME">
+            <summary>
+            检测有效日期
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.BILL_STORE_ID">
+            <summary>
+            单据入库编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.START_NUM">
+            <summary>
+            起始号码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.END_NUM">
+            <summary>
+            终止号码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CHECK_LOT">
+            <summary>
+            检测批次
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.FILL_USER_ID">
+            <summary>
+            制定人
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CHECK_TYPE">
+            <summary>
+            抽检方式
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CREATEDATE">
+            <summary>
+            生成时间
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.TASK_SOURCE">
+            <summary>
+            任务来源
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.TASK_SEASON">
+            <summary>
+            实施季度
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.ECO_BUY_NUM">
+            <summary>
+            电商买样批次数
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.PRO_CHECK_NUM">
+            <summary>
+            生产企业抽样批次数
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.STORE_BUY_NUM">
+            <summary>
+            市场买样批次数
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.FINISH_TIME">
+            <summary>
+            要求完成日期
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.TASK_YEAR">
+            <summary>
+            实施年度
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.ATTACHMENT_FILES">
+            <summary>
+            附件
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.ORDER_CODE">
+            <summary>
+            流水号码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CHECK_KIND_PRO">
+            <summary>
+            任务类型-生产企业抽样
+            1-省级监督抽查；
+            2-产品质量风险监测；
+            3-省级联动监督抽查；
+            4-省级专项监督抽查；
+            5-国家联动监督抽查；
+            6-省级监督抽查（产品质量风险监测）;
+            7-联动监督抽查和其他；
+            08-01：定期监督抽查;
+            09-02：省级专项监督抽查;
+            10-03：省级联动监督抽查
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CHECK_KIND_ECO">
+            <summary>
+            任务类型-电商买样
+            1-省级监督抽查；
+            2-产品质量风险监测；
+            3-省级联动监督抽查；
+            4-省级专项监督抽查；
+            5-国家联动监督抽查；
+            6-省级监督抽查（产品质量风险监测）;
+            7-联动监督抽查和其他；
+            08-01：定期监督抽查;
+            09-02：省级专项监督抽查;
+            10-03：省级联动监督抽查
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CHECK_KIND_STORE">
+            <summary>
+            任务类型-市场买样
+            1-省级监督抽查；
+            2-产品质量风险监测；
+            3-省级联动监督抽查；
+            4-省级专项监督抽查；
+            5-国家联动监督抽查；
+            6-省级监督抽查（产品质量风险监测）;
+            7-联动监督抽查和其他；
+            08-01：定期监督抽查;
+            09-02：省级专项监督抽查;
+            10-03：省级联动监督抽查
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CHECK_DEPTS">
+            <summary>
+            分配的检测部门编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.TASK_START_TIME">
+            <summary>
+            任务开始日期
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.ALLOC_TIME">
+            <summary>
+            任务下达日期
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.PRO_CLASS_CODE">
+            <summary>
+            产品分类代码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CPDL_ID">
+            <summary>
+            产品大类ID
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.QT_CPDL_NAME">
+            <summary>
+            产品大类名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CPMC_NAME">
+            <summary>
+            产品名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.OTHER_NUM">
+            <summary>
+            其他来源批次数
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CPLB_NAME">
+            <summary>
+            产品分类(名称)
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.TYPE">
+            <summary>
+            类型：1：抽查并检验；2：抽查；3检验
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.CCJG_NAME">
+            <summary>
+            抽查机构名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN.PLAN_INFO_SYN_TYPE">
+            <summary>
+            类型：01：工业品，02：消费品
             </summary>
         </member>
         <member name="T:NQI_LIMS.Model.PM_PLAN_SUB">
@@ -910,14 +1370,707 @@
             ID
             </summary>
         </member>
-        <member name="T:NQI_LIMS.Model.PM_PRODUCE_UNIT">
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.BILL_CODE">
+            <summary>
+            单据编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.PLAN_CODE">
+            <summary>
+            任务编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.LOT_NUM">
+            <summary>
+            抽检批次号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.TASK_KIND">
+            <summary>
+            任务类型 
+            08：省级监督抽查；
+            09：省级专项监督抽查；
+            10：省级联动监督抽查；
+            11：省级产品质量风险监测
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.CHECK_STATE">
+            <summary>
+            手机端选择的执行类型：
+            1，正常抽样；
+            2，拒绝抽样；
+            3，无法抽样；
+            4，成品油抽样；
+            5，市场抽样；
+            6，其他来源；
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GRUOP_ID_TEMP">
+            <summary>
+            检测组编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.CARY_ID">
+            <summary>
+            受检单位编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.PRO_ID">
+            <summary>
+            生产单位编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_ID">
+            <summary>
+            受检产品编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_SCALE">
+            <summary>
+            受检产品规格型号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_PRO_TIME_TEMP">
+            <summary>
+            受检产品生产日期
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_PRO_LOT">
+            <summary>
+            受检产品生产批号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_CHECK_NUM">
+            <summary>
+            受检产品抽样数量
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_COPY_NUM">
+            <summary>
+            受检产品备样量
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_COPY_LOCAL">
+            <summary>
+            受检产品备样封存地点
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_BASE_NUM">
+            <summary>
+            受检产品抽样基数
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_CHECK_TIME">
+            <summary>
+            受检产品抽样日期
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_CHECK_LOCAL">
+            <summary>
+            受检产品抽样地点
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_SEAL_STATE">
+            <summary>
+            受检产品封样状态
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_CAN_SALE">
+            <summary>
+            受检产品是否合格代销
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.LAST_YEAR_SALE">
+            <summary>
+            所抽产品上年销售额
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.EXEC_ID">
+            <summary>
+            抽样单位编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.REMARKS">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.CREATEDATE">
+            <summary>
+            生成时间
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_CHECK_LOT">
+            <summary>
+            受检产品抽样批量
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.STATE">
+            <summary>
+            抽检任务状态
+            0:抽样人员待上传  
+            1:抽样人员已上传 
+            2:抽样信息上传照片未上传
+            3:抽样信息上传照片已上传 
+            4:已提交（提交省公司）
+            5:提交审批 
+            6:审批通过 
+            7:驳回 
+            9:删除
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.IMG_GROUP_ID">
+            <summary>
+            图片附件group_id（PC端的产品信息截图对应APP端所有打包截图）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.VID_GROUP_ID">
+            <summary>
+            视频附件group_id
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_SEND_LOCAL">
+            <summary>
+            受检产品寄送样地点
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_SEND_TIME">
+            <summary>
+            受检产品寄送样截止日期
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.CHECK_TYPE">
+            <summary>
+            抽检方式 
+            1:现场抽样
+            2:市场买样
+            3：电商买样 
+            4：其他来源
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_CHECK_LEVEL">
+            <summary>
+            受检产品监管类别
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_CERT_CODE">
+            <summary>
+            受检产品证书编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_NAME">
+            <summary>
+            受检产品名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_BRAND">
+            <summary>
+            受检产品商标
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_EXPORT">
+            <summary>
+            受检产品是否出口
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_STANDARD">
+            <summary>
+            受检产品执行标准
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_LEVEL">
+            <summary>
+            受检产品等级
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.SAMPLE_STEP">
+            <summary>
+            采样环节
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.SAMPLE_STEP_OTHER">
+            <summary>
+            采样环节其他说明
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.EC_ID">
+            <summary>
+            电商平台编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.INVOICE_CODE">
+            <summary>
+            发票号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.INVOICE_UNIT">
+            <summary>
+            开票单位
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.SALE_PRICE">
+            <summary>
+            销售单价(元)
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.QUALITY_PROMISE">
+             <summary>
+            明示质量承诺 
+             </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.CHECK_COMP">
+            <summary>
+            承检机构
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.FILL_USER_ID">
+            <summary>
+            填报人id
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.REFUSE_DESCRIPTION">
+            <summary>
+            拒检事实认定
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.NON_FOUND_EXPLANATION">
+            <summary>
+            未抽样原因（其他）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.NON_FOUND_CODE">
+            <summary>
+            未抽样原因
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.CHECK_CODE">
+            <summary>
+            抽样单编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.DELIVERY_ID">
+            <summary>
+            快递单号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.NON_FOUND_CHECK_PERSON">
+            <summary>
+            未抽样执行人
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.NON_FOUND_COMPANY_NAME">
+            <summary>
+            未抽样企业名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.PROCESS_ID">
+            <summary>
+            流程ID
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.PROCESS_FILES">
+            <summary>
+            流程附件
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.RES_VALUE">
+            <summary>
+            发起修改流程责任认定方
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.RES_DES">
+            <summary>
+            发起修改流程责任认定说明
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.DEL_COMP_SHEET">
+            <summary>
+            检验报告快递公司
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.DELIVERY_ID_SHEET">
+            <summary>
+            检验报告快递单号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.DEL_COMP_SAMPLE">
+            <summary>
+            样品快递公司
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_PRO_LIMIT">
+            <summary>
+            受检产品限用日期
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GRUOP_ID">
+            <summary>
+            检测组编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_PRO_TIME">
+            <summary>
+            受检产品生产日期
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.PRO_BRAND_BUILDING">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.PRO_CLASS_CODE">
+            <summary>
+            产品分类代码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_PROTECTION_REQ">
+            <summary>
+            防护及保存要求
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_UNIT_PRICE">
+            <summary>
+            销售单价
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_SALE_AREA">
+            <summary>
+            销售地区
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_SALE_MODE">
+            <summary>
+            销售方式
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_MAN_CONSIGNMENT">
+            <summary>
+            是否委托加工
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_CONSIGN_ENTERPRISE">
+            <summary>
+            委托加工企业名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_NEEDS_RETREAT">
+            <summary>
+            是否需要退样
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_RETREAT_MODE">
+            <summary>
+            退样方式
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.DELIVERY_RECEIPT_STATE">
+            <summary>
+            快递签收状态 1：未签收；2：已签收；3：已发出
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.IMG_DELIVERY_GROUP_ID">
+            <summary>
+            快递截图附件
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_STATE">
+            <summary>
+            样品状态
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.GOODS_COPY_STATE">
+            <summary>
+            备样封样状态
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.IMG_101_GROUP_ID">
+            <summary>
+            截图附件1（PC端订单或交易记录等销售信息截图）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.IMG_102_GROUP_ID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.IMG_103_GROUP_ID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.IMG_104_GROUP_ID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.IMG_105_GROUP_ID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.MANUFACTURER">
+            <summary>
+            生产企业名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.LINKS_WEB_SITES">
+            <summary>
+            商品网址链接（含商品唯一识别号）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.ONLINE_ORDER_CODE">
+            <summary>
+            商品订单编码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.MANUFACTURER_ID">
+            <summary>
+            生产企业名称编号（取方案系统生产企业名称编号）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.IMG_106_GROUP_ID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.OIL_IS_DETERGENT">
+            <summary>
+            是否加入清净剂
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.OIL_INTAKE_DATE">
+            <summary>
+            最近一批油品进罐日期
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.OIL_LAST_ALLOWANCE">
+            <summary>
+            前罐内余量
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.OIL_SAMPLING_SITE">
+            <summary>
+            抽样地点
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.OIL_LASTYEAR_QUANTITY">
+            <summary>
+            上年出库量
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.OIL_TOTAL_CAPACITY">
+            <summary>
+            受检单位总罐容量
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.USE_COMPANY_ID">
+            <summary>
+            使用单位ID
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.CARY_CLASSIFICATION">
+            <summary>
+            实体店分类
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.PRO_JH_KC">
+            <summary>
+            产品进货/库存数
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.UNIFIED_CREDIT_CODE">
+            <summary>
+            统一信用代码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.PLACE_OF_DELIVERY">
+            <summary>
+            发货地
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.PLACE_OF_DELIVERY_PROVINCE">
+            <summary>
+            发货地（省编码）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.PLACE_OF_DELIVERY_CITY">
+            <summary>
+            发货地（市编码）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.OTHER_ID">
+            <summary>
+            其他来源单位编码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.PM_TB_STATE">
+            <summary>
+            批次数据同步状态
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.DATE_OF_PRINTING">
+            <summary>
+            确认书打印日期
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PLAN_SUB.PRO_ABSTRACT">
+            <summary>
+            生产企业抽样摘要
+            </summary>
+        </member>
+        <member name="T:NQI_LIMS.Model.PM_PRODUCE_UNIT">
+            <summary>
+            生产企业信息
             </summary>
         </member>
         <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.ID">
             <summary>
             ID
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_CODE">
+            <summary>
+            生产单位编码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_NAME">
+            <summary>
+            生产单位名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_OWNERSHIP">
+            <summary>
+            生产单位所属地
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_ADDR">
+            <summary>
+            生产单位地址
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_ZIP_CODE">
+            <summary>
+            生产单位邮编
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_PRESENT">
+            <summary>
+            生产单位法人代表
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_LINKMAN">
+            <summary>
+            生产单位联系人
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_TEL">
+            <summary>
+            生产单位联系电话
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_PHONE">
+            <summary>
+            生产单位手机
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_BUS_LICENCE">
+            <summary>
+            生产单位营业执照(统一社会信用代码)
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_ORGAN_CODE">
+            <summary>
+            生产单位机构代码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_SACLE">
+            <summary>
+            生产单位企业规模
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.ECO_INSIDE">
+            <summary>
+            经济类型内资
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_QUALITY_PASS">
+            <summary>
+            生产单位质量认证体系
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.ECO_HMT">
+            <summary>
+            经济类型港澳台
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.ECO_OUTSIDE">
+            <summary>
+            经济类型外资
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.ECO_SINGLE">
+            <summary>
+            经济类型个体
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_CERT_CODE">
+            <summary>
+            生产单位证书编码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_SACLE_TYPE">
+            <summary>
+            生产单位企业规模类型
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_ORG_CODE">
+            <summary>
+            组织机构代码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_ORG_NAME">
+            <summary>
+            机构名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_CREDIT_CODE">
+            <summary>
+            企业信用代码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_IS_SCALE">
+            <summary>
+            是否为规模以上企业
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_BRAND_BUILDING">
+            <summary>
+            品牌建设
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_CLASS_CODE">
+            <summary>
+            产品分类代码
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_PROVINCE">
+            <summary>
+            生产单位所属地（省编码）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_CITY">
+             <summary>
+            生产单位所属地（市编码） 
+             </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_COUNTY">
+            <summary>
+            生产单位所属地（区/县编码）
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.PM_PRODUCE_UNIT.PRO_CPMC_NAME">
+            <summary>
+            产品分类名称
             </summary>
         </member>
         <member name="P:NQI_LIMS.Model.RootEntity.Id">

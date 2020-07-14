@@ -126,5 +126,7 @@ namespace NQI_LIMS.Api.Controllers
             return MyResponse.Return<JObject>(jo).GetResult();
         }
         #endregion
+
+
     }
 }
