@@ -79,8 +79,6 @@ namespace NQI_LIMS.Services.localhost
                 #endregion
 
                 #region 组装数据
-                var mResult = JObject.Parse(JsonConvert.SerializeObject(mPmPlanSubInfo));
-            
                 return new JObject() {
                     {"ID",mPmPlanSubInfo.ID},
                     {"PLAN_CODE",mPmPlanSubInfo.PLAN_CODE},

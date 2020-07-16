@@ -33,3 +33,4 @@ C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIM
 C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.csproj.CoreCompileInputs.cache
 C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.dll
 C:\D\8.0 Development\NQI_LIMS\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.pdb
+D:\个人文件\个人项目\work\nqilims\NQI_LIMS.FrameWork\obj\Debug\netcoreapp3.1\NQI_LIMS.FrameWork.csprojAssemblyReference.cache

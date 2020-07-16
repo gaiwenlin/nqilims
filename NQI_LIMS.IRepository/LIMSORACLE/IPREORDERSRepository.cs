@@ -8,5 +8,8 @@ namespace NQI_LIMS.IRepository
 	/// </summary>	
     public interface IPREORDERSRepository : IBaseRepository<PREORDERS>
     {
+        int SavePreOrders(PREORDERS model);
+
+        PREORDERS GetPreOrdersByNo(string iPreOrdNo);
     }
 }

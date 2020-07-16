@@ -8,5 +8,8 @@ namespace NQI_LIMS.IRepository
 	/// </summary>	
     public interface IORDERSRepository : IBaseRepository<ORDERS>
     {
+        int SaveOrders(ORDERS model);
+
+        ORDERS GetOrdersByNo(string iOrdNo);
     }
 }

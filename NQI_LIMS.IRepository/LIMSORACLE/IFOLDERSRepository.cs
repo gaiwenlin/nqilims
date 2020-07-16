@@ -8,5 +8,8 @@ namespace NQI_LIMS.IRepository
 	/// </summary>	
     public interface IFOLDERSRepository : IBaseRepository<FOLDERS>
     {
+        int SaveFolders(FOLDERS model);
+
+        FOLDERS GeyFolderByNo(string iFolderNo);
     }
 }
