@@ -11,5 +11,7 @@ namespace NQI_LIMS.IRepository
         int SaveFolders(FOLDERS model);
 
         FOLDERS GeyFolderByNo(string iFolderNo);
+
+        FOLDERS GetMaxFolder();
     }
 }

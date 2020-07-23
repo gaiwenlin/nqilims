@@ -5,7 +5,9 @@ using NQI_LIMS.IRepository.UnitOfWork;
 using NQI_LIMS.Model.Models;
 //using NQI_LIMS.Model.Models.LIMSORACLE;
 using NQI_LIMS.Repository.Base;
+using SqlSugar;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace NQI_LIMS.Repository
@@ -30,6 +32,22 @@ namespace NQI_LIMS.Repository
                 SerilogServer.WriteErrorLog("GeyFolderByNo", ex.Message, ex);
                 throw ex;
             }
+        }
+
+        public FOLDERS GetMaxFolder()
+        {
+            try
+            {
+                //return this.Db.Queryable<FOLDERS>().Max(t => t.FOLDERNO);
+                return this.Db.Queryable<FOLDERS>().OrderBy(t => t.FOLDERNO, OrderByType.Desc).First();
+
+            }
+            catch (Exception ex)
+            {
+                SerilogServer.WriteErrorLog("GetMaxFolder", ex.Message, ex);
+                throw ex;
+            }
+
         }
 
         public int SaveFolders(FOLDERS model)

@@ -5,6 +5,7 @@ using NQI_LIMS.IRepository.UnitOfWork;
 using NQI_LIMS.Model.Models;
 //using NQI_LIMS.Model.Models.LIMSORACLE;
 using NQI_LIMS.Repository.Base;
+using SqlSugar;
 using System;
 
 namespace NQI_LIMS.Repository
@@ -23,6 +24,19 @@ namespace NQI_LIMS.Repository
             try
             {
                 return this.Db.Queryable<PREORDERS>().Where(t => t.PREORDNO == iPreOrdNo).First();
+            }
+            catch (Exception ex)
+            {
+                SerilogServer.WriteErrorLog("GetPreOrdersByNo", ex.Message, ex);
+                throw ex;
+            }
+        }
+
+        public PREORDERS GetMaxPreOrders()
+        {
+            try
+            {
+                return this.Db.Queryable<PREORDERS>().OrderBy(t => t.PREORDNO, OrderByType.Desc).First();
             }
             catch (Exception ex)
             {

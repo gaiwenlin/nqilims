@@ -11,5 +11,6 @@ namespace NQI_LIMS.IRepository
         int SavePreOrders(PREORDERS model);
 
         PREORDERS GetPreOrdersByNo(string iPreOrdNo);
+        PREORDERS GetMaxPreOrders();
     }
 }
