@@ -17,6 +17,7 @@ namespace NQI_LIMS.Repository
 	/// </summary>
     public class FOLDERSRepository : BaseRepository<FOLDERS>, IFOLDERSRepository
     {
+        private static readonly object obj = new object();
         public FOLDERSRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
         }
@@ -38,8 +39,10 @@ namespace NQI_LIMS.Repository
         {
             try
             {
-                //return this.Db.Queryable<FOLDERS>().Max(t => t.FOLDERNO);
-                return this.Db.Queryable<FOLDERS>().OrderBy(t => t.FOLDERNO, OrderByType.Desc).First();
+                lock (obj) {
+                    //return this.Db.Queryable<FOLDERS>().Max(t => t.FOLDERNO);
+                    return this.Db.Queryable<FOLDERS>().OrderBy(t => t.FOLDERNO, OrderByType.Desc).First();
+                }
 
             }
             catch (Exception ex)

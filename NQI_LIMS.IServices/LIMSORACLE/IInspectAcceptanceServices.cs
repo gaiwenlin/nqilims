@@ -6,6 +6,6 @@ namespace NQI_LIMS.IServices
 {
     public interface IInspectAcceptanceServices
     {
-        bool SaveInspectAcceptance(InputInsepectAcceptanceModel model);
+        bool SaveInspectAcceptance(int iUserId,InputInsepectAcceptanceModel model);
     }
 }

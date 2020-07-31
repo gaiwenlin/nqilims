@@ -2,6 +2,9 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 using System;
+using NQI_LIMS.SwaggerHelper;
+using System.Linq;
+using NQI_LIMS.Model;
 
 namespace NQI_LIMS.Filter
 {
@@ -17,6 +20,19 @@ namespace NQI_LIMS.Filter
             _logger = logger;
             _blogArticleServices = blogArticleServices;
             _name = Name;
+        }
+
+        public override void OnActionExecuting(ActionExecutingContext actionContext)
+        {
+            //var dd =await _blogArticleServices.Query();
+            if (!actionContext.HttpContext.User.Identity.IsAuthenticated &&
+                actionContext.Filters.Any(item => item is MustLogin))
+            {
+                actionContext.Result= MyResponse.MustLogin<string>().GetResult();
+                base.OnActionExecuting(actionContext);
+                return;
+            }
+            base.OnActionExecuting(actionContext);
         }
 
 

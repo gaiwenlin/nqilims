@@ -33,5 +33,13 @@ namespace NQI_LIMS.SwaggerHelper
         {
             GroupName = version.ToString();
         }
+
+      
+    }
+
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = true, Inherited = false)]
+    public class MustLogin : Attribute
+    {
+
     }
 }

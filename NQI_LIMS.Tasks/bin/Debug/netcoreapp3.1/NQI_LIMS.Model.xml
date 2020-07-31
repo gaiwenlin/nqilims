@@ -49,6 +49,31 @@
             返回数据集合
             </summary>
         </member>
+        <member name="F:NQI_LIMS.Model.ResponseResult.None">
+            <summary>
+            未知错误类型
+            </summary>
+        </member>
+        <member name="F:NQI_LIMS.Model.ResponseResult.Success">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:NQI_LIMS.Model.ResponseResult.MustLogin">
+            <summary>
+            需要重新登录
+            </summary>
+        </member>
+        <member name="F:NQI_LIMS.Model.ResponseResult.BusinessError">
+            <summary>
+            业务规则错误信息
+            </summary>
+        </member>
+        <member name="F:NQI_LIMS.Model.ResponseResult.NoAuth">
+            <summary>
+            无操作权限
+            </summary>
+        </member>
         <member name="P:NQI_LIMS.Model.Advertisement.ImgUrl">
             <summary>
             广告图片

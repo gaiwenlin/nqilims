@@ -15,6 +15,7 @@ namespace NQI_LIMS.Repository
 	/// </summary>
     public class PREORDERSRepository : BaseRepository<PREORDERS>, IPREORDERSRepository
     {
+        private static readonly object obj = new object();
         public PREORDERSRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
         }
@@ -36,7 +37,10 @@ namespace NQI_LIMS.Repository
         {
             try
             {
-                return this.Db.Queryable<PREORDERS>().OrderBy(t => t.PREORDNO, OrderByType.Desc).First();
+                lock (obj)
+                {
+                    return this.Db.Queryable<PREORDERS>().OrderBy(t => t.PREORDNO, OrderByType.Desc).First();
+                }
             }
             catch (Exception ex)
             {

@@ -1,4 +1,5 @@
 ﻿using NQI_LIMS.Common;
+using NQI_LIMS.Common.HttpContextUser;
 using NQI_LIMS.Common.LogHelper;
 using NQI_LIMS.IRepository;
 using NQI_LIMS.IRepository.UnitOfWork;
@@ -17,20 +18,23 @@ namespace NQI_LIMS.Services
         private readonly IFOLDERSRepository _FoldersDal;
         private readonly IPREORDERSRepository _PreOrdersDal;
         private readonly IUnitOfWork _UnitOfWork;
-        public InspectAcceptanceServices(IORDERSRepository orderDal, IFOLDERSRepository foldersDal, IPREORDERSRepository preOrdersDal, IUnitOfWork unitOfWork)
+        private readonly ISysUserInfoServices _SysUserInfoServices;
+        public InspectAcceptanceServices(IORDERSRepository orderDal, IFOLDERSRepository foldersDal, IPREORDERSRepository preOrdersDal, IUnitOfWork unitOfWork, ISysUserInfoServices sysUserInfoServices)
         {
             this._OrderDal = orderDal;
             this._FoldersDal = foldersDal;
             this._PreOrdersDal = preOrdersDal;
             this._UnitOfWork = unitOfWork;
+            this._SysUserInfoServices = sysUserInfoServices;
             base.BaseDal = foldersDal;
         }
 
-        public bool SaveInspectAcceptance(InputInsepectAcceptanceModel model)
+        public bool SaveInspectAcceptance(int iUserId,InputInsepectAcceptanceModel model)
         {
             try
             {
                 #region 获取用户部门信息
+                var mUserInfo = _SysUserInfoServices.QueryById(iUserId);//用户信息
                 #endregion
 
                 #region 参数检测
@@ -38,7 +42,7 @@ namespace NQI_LIMS.Services
                 _UnitOfWork.BeginTran();
                 #region 受理单
                 FOLDERS folders = new FOLDERS();
-                folders.FOLDERNO = this.CreateFolderNo();//生成规则 
+                folders.FOLDERNO = this.CreateFolderNo();//生成规则               
                 var IsFolderExist = _FoldersDal.GeyFolderByNo(folders.FOLDERNO) != null ? true : false;
                 if (!IsFolderExist)
                 {
