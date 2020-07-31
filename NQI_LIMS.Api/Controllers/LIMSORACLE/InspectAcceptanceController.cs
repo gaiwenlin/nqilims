@@ -30,8 +30,6 @@ namespace NQI_LIMS.Api.Controllers.LIMSORACLE
         [MustLogin]
         public ActionResult SaveInspectAcceptance([FromBody] InputInsepectAcceptanceModel iModel)
         {
-            string ClaimType = "jti";
-            var getUserInfoByToken = _user.GetUserInfoFromToken(ClaimType);
             bool jo = _InspectAcceptanceServices.SaveInspectAcceptance(_user.ID,iModel);
             return MyResponse.Return<int>(jo?1:0).GetResult();
         }
