@@ -8,5 +8,6 @@ namespace NQI_LIMS.IRepository
 	/// </summary>	
     public interface IPM_PLANRepository : IBaseRepository<PM_PLAN>
     {
+        PM_PLAN GetPmPlanByCode(string iPalnCode);
     }
 }

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 
 namespace NQI_LIMS.Api.Controllers
 {
@@ -14,6 +15,7 @@ namespace NQI_LIMS.Api.Controllers
    // [Authorize(Permissions.Name)]
     public class PM_PLANController : ControllerBase
     {
+        #region 自动生成代码
         /// <summary>
         /// 服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
         /// </summary>
@@ -112,5 +114,15 @@ namespace NQI_LIMS.Api.Controllers
 
             return data;
         }
-    }
+        #endregion
+
+        #region 根据抽查批次号获取信息
+        [HttpPost]
+        public ActionResult GetPmPlanByCode(string iCodeNum)
+        {
+            JObject jo = _PM_PLANServices.GetPmPlanByCode(iCodeNum);
+            return MyResponse.Return<JObject>(jo).GetResult();
+        }
+        #endregion
+    }//class
 }

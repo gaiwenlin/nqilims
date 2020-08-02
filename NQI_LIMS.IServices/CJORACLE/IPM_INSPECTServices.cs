@@ -7,6 +7,6 @@ namespace NQI_LIMS.IServices
 {
     public interface IPM_INSPECTServices : IBaseServices<PM_PLAN_SUB>
     {
-        JObject GetPmInsPectByCode(string iCodeNum);
+        JObject GetPmInsPectByCode(int iUserId, string iCodeNum);
     }
 }

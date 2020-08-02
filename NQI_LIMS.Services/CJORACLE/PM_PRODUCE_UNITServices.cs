@@ -1,3 +1,7 @@
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using NQI_LIMS.Common;
+using NQI_LIMS.Common.LogHelper;
 using NQI_LIMS.IRepository;
 using NQI_LIMS.IServices;
 using NQI_LIMS.Model;
@@ -12,6 +16,29 @@ namespace NQI_LIMS.Services.localhost
         {
             this._dal = dal;
             base.BaseDal = dal;
+        }
+
+        public JObject GetPmProduceUnitByCode(string iProCode)
+        {
+            try
+            {
+                iProCode.NotAllowNullOrEmpty("生产单位编码");
+
+                var pmProductUnitEntity = _dal.GetPmProduceUnitByCode(iProCode);
+                if(pmProductUnitEntity!= null)
+                {
+                    return JObject.Parse(JsonConvert.SerializeObject(pmProductUnitEntity));
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (System.Exception ex)
+            {
+                SerilogServer.WriteErrorLog("GetPmProduceUnitByCode", ex.Message, ex);
+                throw ex;
+            }
         }
     }
 }
