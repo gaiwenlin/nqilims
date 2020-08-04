@@ -4249,10 +4249,7 @@
         },
         "runtime": {
           "bin/placeholder/NQI_LIMS.Extensions.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "NQI_LIMS.IRepository/1.0.0": {
         "type": "project",

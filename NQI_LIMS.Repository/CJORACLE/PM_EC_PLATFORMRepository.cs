@@ -13,5 +13,7 @@ namespace NQI_LIMS.Repository.localhost
         public PM_EC_PLATFORMRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
         }
-    }
-}
+
+    
+    }//class
+}//namespace

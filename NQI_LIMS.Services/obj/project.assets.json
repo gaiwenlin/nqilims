@@ -3107,7 +3107,10 @@
         },
         "runtime": {
           "bin/placeholder/NQI_LIMS.IServices.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "NQI_LIMS.Model/1.0.0": {
         "type": "project",

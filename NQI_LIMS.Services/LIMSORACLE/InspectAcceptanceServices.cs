@@ -19,13 +19,15 @@ namespace NQI_LIMS.Services
         private readonly IPREORDERSRepository _PreOrdersDal;
         private readonly IUnitOfWork _UnitOfWork;
         private readonly ISysUserInfoServices _SysUserInfoServices;
-        public InspectAcceptanceServices(IORDERSRepository orderDal, IFOLDERSRepository foldersDal, IPREORDERSRepository preOrdersDal, IUnitOfWork unitOfWork, ISysUserInfoServices sysUserInfoServices)
+        private readonly IDEPARTMENTSServices _DepartmentsServices;
+        public InspectAcceptanceServices(IORDERSRepository orderDal, IFOLDERSRepository foldersDal, IPREORDERSRepository preOrdersDal, IUnitOfWork unitOfWork, ISysUserInfoServices sysUserInfoServices, IDEPARTMENTSServices departmentsServices)
         {
             this._OrderDal = orderDal;
             this._FoldersDal = foldersDal;
             this._PreOrdersDal = preOrdersDal;
             this._UnitOfWork = unitOfWork;
             this._SysUserInfoServices = sysUserInfoServices;
+            this._DepartmentsServices = departmentsServices;
             base.BaseDal = foldersDal;
         }
 
@@ -34,19 +36,37 @@ namespace NQI_LIMS.Services
             try
             {
                 #region 获取用户部门信息
-                var mUserInfo = _SysUserInfoServices.QueryById(iUserId);//用户信息
-                #endregion
+                var mUserInfo = _SysUserInfoServices.QueryById(iUserId).Result;//用户信息
+                /*
+                 20200801 没有组织架构，后期要增加，
+                临时在adress字段 里面配置用户的部门信息
+                格式： DEPT部门编号RY01
+                 */
+                 #endregion
 
-                #region 参数检测
-                #endregion
+             
                 _UnitOfWork.BeginTran();
                 #region 受理单
                 FOLDERS folders = new FOLDERS();
-                folders.FOLDERNO = this.CreateFolderNo();//生成规则               
+                folders.FOLDERNO = this.CreateFolderNo();//生成规则 
+                
+                folders.FLDSTS = "Evaluating";
+                folders.DISPSTS = "合同评审中";
+                folders.SAMPLECLASSFORCCC = "3C样品种类名称";
+                folders.CODEOFINSPECTIONORG = "承检机构代码";
+                folders.TESTORGREGFORM = "南京市产品质量监督检验院";
+                folders.TESTTYPE = "01";
+           
+
+
                 var IsFolderExist = _FoldersDal.GeyFolderByNo(folders.FOLDERNO) != null ? true : false;
                 if (!IsFolderExist)
                 {
                     _FoldersDal.SaveFolders(folders);
+                }
+                else
+                {
+                    return false;
                 }
                 #endregion
 

@@ -300,6 +300,31 @@
             
             </summary>
         </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.DEPT">
+            <summary>
+            部门编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.REPORTNUM">
+            <summary>
+            报告份数
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.REPORTSCOPIES">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.DIVISIONCODE">
+            <summary>
+            主检部们
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.PAYMENT">
+            <summary>
+            付款方式
+            </summary>
+        </member>
         <member name="T:NQI_LIMS.Model.Models.ORDERS">
             <summary>
             
@@ -957,7 +982,7 @@
         </member>
         <member name="T:NQI_LIMS.Model.PM_EC_PLATFORM">
             <summary>
-            
+            网店信息
             </summary>
         </member>
         <member name="P:NQI_LIMS.Model.PM_EC_PLATFORM.EC_ID">
@@ -2604,364 +2629,49 @@
             
             </summary>
         </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.EntrustUnitName">
+        <member name="F:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.AddSupervisePlan">
             <summary>
-            委托单位
+            LIMS任务
             </summary>
         </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.EntrustUnitAddress">
+        <member name="F:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.Departments">
             <summary>
-            委托单位地址
+            LIMS部门
             </summary>
         </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.TaskType">
+        <member name="F:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.Divisions">
             <summary>
-            任务类别
+            LIMS中心
             </summary>
         </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.TaskPlanNo">
+        <member name="F:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.PmPlanSubInfo">
             <summary>
-            计划编号
+            批次
             </summary>
         </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.TaskPlanFileNo">
+        <member name="F:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.PmPlanInfo">
             <summary>
-            计划文件号
+            任务
             </summary>
         </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.SamplingArea">
+        <member name="F:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.PmCaryInfo">
             <summary>
-            抽样领域
+            受检单位信息
             </summary>
         </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.MainCheckDepartMent">
+        <member name="F:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.PmProduceUnit">
             <summary>
-            主检部门
+            生产企业信息
             </summary>
         </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.Laboratory">
+        <member name="F:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.PmExecUintInfo">
             <summary>
-            实验室
+            抽样单位信息
             </summary>
         </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.InspectionUnit">
+        <member name="F:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.PmEcPlatFormInfo">
             <summary>
-            检验单位
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.InspectionAddress">
-            <summary>
-            检验地点
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.AcceptanceNo">
-            <summary>
-            受理单号
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.AcceptanceName">
-            <summary>
-            受理人
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.AcceptanceDateTime">
-            <summary>
-            受理时间
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedUnitName">
-            <summary>
-            受检单位名称
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedUnitAddress">
-            <summary>
-            受检单位地址
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedUnitNo">
-            <summary>
-            受检单位编号
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedUnitLegal">
-            <summary>
-            受检单位法人
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedUnitContacts">
-            <summary>
-            受检单位联系人
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedUnitEmail">
-            <summary>
-            受检单位邮箱
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedUnitAreaType">
-            <summary>
-            受检单位-区域类别
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedUnitAgreementNo">
-            <summary>
-            受检单位-协议编号
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedUnitLicenseNo">
-            <summary>
-            受检单位-营业执照统一代码
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.Fax">
-            <summary>
-            受检单位-传真
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedUnitContactsPhone">
-            <summary>
-            受检单位-联系方式
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedProSale">
-            <summary>
-            所抽产品上年销售
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedProSaleNum">
-            <summary>
-            所抽产品上年销售数据
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedUnitArea1">
-            <summary>
-            行政(省)
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedUnitArea2">
-            <summary>
-            行政(城市)
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ByCheckedUnitArea3">
-            <summary>
-            行政(区)
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitName">
-            <summary>
-            生产单位名称
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitAddress">
-            <summary>
-            生产单位地址
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitNo">
-            <summary>
-            生产单位编号
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitPostCode">
-            <summary>
-            生产单位邮政编号
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitLegal">
-            <summary>
-            生产单位法人
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitContacts">
-            <summary>
-            生产单位联系人
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitContactsPhone">
-            <summary>
-            生产单位联系人电话
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitEnterScale">
-            <summary>
-            生产单位企业规模
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitMoneyScale">
-            <summary>
-            生产单位经济规模
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitScaleValue">
-            <summary>
-            生产单位销售额
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitPersonNum">
-            <summary>
-            生产单位企业人数
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitArea1">
-            <summary>
-            生产单位行政(省)
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitArea2">
-            <summary>
-            生产单位行政(城市)
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitArea3">
-            <summary>
-            生产单位行政(区)
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.IsManageMentCert">
-            <summary>
-            生产单位管理体系(0:未通过1:通过)
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ManageMentCertNo">
-            <summary>
-            生产单位管理体系认证编号
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProductUnitLicenseNo">
-            <summary>
-            生产单位营业执照编号
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.SamplingUnitName">
-            <summary>
-            抽样单位名称
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.SamplingUnitAddOrEmail">
-            <summary>
-            抽样单位地址/邮箱
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.SamplingUnitContacts">
-            <summary>
-            抽样单位联系人
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.SamplingUnitContactsPhone">
-            <summary>
-            抽样单位联系人电话
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.SamplingUnitMark">
-            <summary>
-            抽样单位备注
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.MainCheckGroupName">
-            <summary>
-            主检组
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSampleNo">
-            <summary>
-            样品编号
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSuperviseType">
-            <summary>
-            监管类别
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProCertNo">
-            <summary>
-            证书编号
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProCheckSealName">
-            <summary>
-            检查封样人
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProName">
-            <summary>
-            产品名称
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSpeciNo">
-            <summary>
-            产品规格型号
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProCheckReceiveName">
-            <summary>
-            产品接样人
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProCreateAndNo">
-            <summary>
-            产品生产时间/批号
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProTradeMark">
-            <summary>
-            产品商标
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSampleReciveDateTime">
-            <summary>
-            样品到达时间
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSampleNum">
-            <summary>
-            样品数量
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSampleExtraNum">
-            <summary>
-            产品备样数量
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSampleExtraAddress">
-            <summary>
-            备样封存地点
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSampleOrderTime">
-            <summary>
-            下达时间
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSampleCompletedTime">
-            <summary>
-            要求完成时间
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSampleInOrStortNum">
-            <summary>
-            样品进货/库存数量
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSampleStandardFile">
-            <summary>
-            样品执行标准/技术文件
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSampleLevel">
-            <summary>
-            产品标注等级
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSampleQuality">
-            <summary>
-            产品明示质量承诺
-            </summary>
-        </member>
-        <member name="P:NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel.ProSamplingTime">
-            <summary>
-            产品抽样时间
+            网店信息
             </summary>
         </member>
         <member name="T:NQI_LIMS.Model.ViewModels.ServerViewModel">

@@ -15,12 +15,14 @@ namespace NQI_LIMS.Services.localhost
     public partial class PM_INSPECTServices : BaseServices<PM_PLAN_SUB>, IPM_INSPECTServices
     {
         private readonly IPM_INSPECTRepository _dal;
-        public PM_INSPECTServices(IPM_INSPECTRepository dal)
+        private readonly ISysUserInfoServices _SysUserInfoServices;
+        public PM_INSPECTServices(IPM_INSPECTRepository dal, ISysUserInfoServices sysUserInfoServices)
         {
             this._dal = dal;
+            this._SysUserInfoServices = sysUserInfoServices;
             base.BaseDal = dal;
         }
-        public JObject GetPmInsPectByCode(string iCodeNum)
+        public JObject GetPmInsPectByCode(int iUserId, string iCodeNum)
         {
             try
             {
@@ -35,6 +37,26 @@ namespace NQI_LIMS.Services.localhost
                 #region 获取主表信息
                 var mPmPlanSubInfo = _dal.GetPmPlanSubByCode(mCode, mNum);
                 mPmPlanSubInfo.NotAllowNull("未查询到抽查任务单信息");
+                #endregion
+
+                #region 获得任务信息 - 查询NQI_LIMS
+                ADD_SUPERVISEPLAN mAddSupervisePlan = null;
+                mAddSupervisePlan = _dal.GetSupervisePlanByCode(mCode);
+                #endregion
+
+                #region 获取用户部门信息
+                var mUserInfo = _SysUserInfoServices.QueryById(iUserId).Result;//用户信息
+                /*
+                 20200801 没有组织架构，后期要增加，
+                临时在adress字段 里面配置用户的部门信息
+                格式： DEPT部门编号RY01
+                 */
+
+                DIVISIONS mDivisions = null;
+                DEPARTMENTS mDepartments = null;
+
+                mDepartments = _dal.GetDepartmentsByCode(mUserInfo.addr);
+                mDivisions = _dal.GetDivisionsByCode(mDepartments.PARENTDIV);
                 #endregion
 
                 #region 任务表
@@ -83,6 +105,15 @@ namespace NQI_LIMS.Services.localhost
                     {"ID",mPmPlanSubInfo.ID},
                     {"PLAN_CODE",mPmPlanSubInfo.PLAN_CODE},
                     {"LOT_NUM",mPmPlanSubInfo.LOT_NUM},
+                  
+                    //任务信息
+                    {"SupervisePlanInfo",JObject.Parse(JsonConvert.SerializeObject(mAddSupervisePlan))},
+                    //部门信息
+                    {"Department", JObject.Parse(JsonConvert.SerializeObject(mDepartments))},
+                    //中心信息
+                    {"Division",JObject.Parse(JsonConvert.SerializeObject(mDivisions)) },
+
+                    //抽检数据库的相关表格：
                     {"PmPlanSubInfo", JObject.Parse(JsonConvert.SerializeObject(mPmPlanSubInfo))},
                     {"PmPlanInfo",mPmPlanInfo!=null?JObject.Parse(JsonConvert.SerializeObject(mPmPlanInfo)):new JObject()},
                     {"PmCaryInfo", mPmCaryInfo!=null?JObject.Parse(JsonConvert.SerializeObject(mPmCaryInfo)):new JObject()},

@@ -22,9 +22,9 @@ namespace NQI_LIMS.Api.Controllers.CJORACLE
         }
         #region 根据抽查批次号获取抽查信息
         [HttpPost]
-        public ActionResult GetPmInsPectByCode(string iCodeNum)
+        public ActionResult GetPmInsPectByCode(int iUserId, string iCodeNum)
         {
-            JObject jo = _PM_INSPECTServices.GetPmInsPectByCode(iCodeNum);
+            JObject jo = _PM_INSPECTServices.GetPmInsPectByCode(iUserId, iCodeNum);
             return MyResponse.Return<JObject>(jo).GetResult();
         }
         #endregion

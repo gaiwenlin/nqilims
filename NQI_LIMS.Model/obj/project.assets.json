@@ -3049,7 +3049,10 @@
         },
         "runtime": {
           "bin/placeholder/NQI_LIMS.Common.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },

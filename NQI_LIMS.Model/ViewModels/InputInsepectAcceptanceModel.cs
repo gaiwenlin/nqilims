@@ -1,11 +1,53 @@
-﻿using System;
+﻿using NQI_LIMS.Model.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace NQI_LIMS.Model.ViewModels
 {
-   public class InputInsepectAcceptanceModel
+    public class InputInsepectAcceptanceModel
     {
+
+        public int id;
+        public string PLAN_CODE;
+        public string LOT_NUM;
+        /// <summary>
+        /// LIMS任务
+        /// </summary>
+        public ADD_SUPERVISEPLAN AddSupervisePlan;
+        /// <summary>
+        /// LIMS部门
+        /// </summary>
+        public DEPARTMENTS Departments;
+        /// <summary>
+        /// LIMS中心
+        /// </summary>
+        public DIVISIONS Divisions;
+        /// <summary>
+        /// 批次
+        /// </summary>
+        public PM_PLAN_SUB PmPlanSubInfo;
+        /// <summary>
+        /// 任务
+        /// </summary>
+        public PM_PLAN PmPlanInfo;
+        /// <summary>
+        /// 受检单位信息
+        /// </summary>
+        public PM_CARY PmCaryInfo;
+        /// <summary>
+        /// 生产企业信息
+        /// </summary>
+        public PM_PRODUCE_UNIT PmProduceUnit;
+        /// <summary>
+        /// 抽样单位信息
+        /// </summary>
+        public PM_EXEC_UINT PmExecUintInfo;
+        /// <summary>
+        /// 网店信息
+        /// </summary>
+        public PM_EC_PLATFORM PmEcPlatFormInfo;
+        /*
         #region 任务信息
         /// <summary>
         /// 委托单位
@@ -312,5 +354,6 @@ namespace NQI_LIMS.Model.ViewModels
         public string ProSamplingTime{ get; set; }
 
         #endregion
+        */
     }
 }

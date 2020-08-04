@@ -35,11 +35,11 @@ namespace NQI_LIMS.Services.localhost
                 var mPmPlanSubInfo =  _dal.GetPmPlanSubByCode(mCode,mNum);                 
                 if (mPmPlanSubInfo != null)
                 {
-                    var result = new JObject() {
-                    {"ID",mPmPlanSubInfo.ID},
-                    {"PLAN_CODE",mPmPlanSubInfo.PLAN_CODE},
-                    {"LOT_NUM",mPmPlanSubInfo.LOT_NUM}
-                     };
+                    //var result = new JObject() {
+                    //{"ID",mPmPlanSubInfo.ID},
+                    //{"PLAN_CODE",mPmPlanSubInfo.PLAN_CODE},
+                    //{"LOT_NUM",mPmPlanSubInfo.LOT_NUM}
+                    // };
                     //return result;//自定义返回
                     return JObject.Parse(JsonConvert.SerializeObject(mPmPlanSubInfo));//全部返回
                 }
