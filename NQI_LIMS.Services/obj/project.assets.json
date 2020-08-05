@@ -3075,10 +3075,7 @@
         },
         "runtime": {
           "bin/placeholder/NQI_LIMS.Common.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "NQI_LIMS.IRepository/1.0.0": {
         "type": "project",
@@ -3091,10 +3088,7 @@
         },
         "runtime": {
           "bin/placeholder/NQI_LIMS.IRepository.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "NQI_LIMS.IServices/1.0.0": {
         "type": "project",
@@ -3107,10 +3101,7 @@
         },
         "runtime": {
           "bin/placeholder/NQI_LIMS.IServices.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "NQI_LIMS.Model/1.0.0": {
         "type": "project",
@@ -3124,10 +3115,7 @@
         },
         "runtime": {
           "bin/placeholder/NQI_LIMS.Model.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
@@ -9515,9 +9503,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

@@ -1,3 +1,7 @@
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using NQI_LIMS.Common;
+using NQI_LIMS.Common.LogHelper;
 using NQI_LIMS.IRepository;
 using NQI_LIMS.IServices;
 using NQI_LIMS.Model.Models;
@@ -16,5 +20,39 @@ namespace NQI_LIMS.Services
             this._dal = dal;
             base.BaseDal = dal;
         }
+
+        /// <summary>
+        /// 根据客户名称查询
+        /// </summary>
+        /// <param name="clientName"></param>
+        /// <returns></returns>
+        public JObject GetRaseClientsByName(string clientName)
+        {
+            try
+            {
+                clientName.NotAllowNullOrEmpty("客户名称");
+
+                var client = _dal.GetRaseClientsByName(clientName);
+                if(client != null)
+                {
+                    return JObject.Parse(JsonConvert.SerializeObject(client));
+                }
+                else
+                {
+                    return null;
+                }
+
+            }
+            catch (System.Exception ex)
+            {
+                SerilogServer.WriteErrorLog("GetRaseClientsByName", ex.Message, ex);
+                throw ex;
+            }
+        }
+
+        //public string GeatRasClientCode()
+        //{
+
+        //}
     }
 }

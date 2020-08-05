@@ -7,6 +7,7 @@ using NQI_LIMS.IServices;
 using NQI_LIMS.Model.Models;
 using NQI_LIMS.Model.ViewModels;
 using NQI_LIMS.Services.BASE;
+using StackExchange.Redis;
 using System;
 using System.Linq;
 
@@ -19,15 +20,21 @@ namespace NQI_LIMS.Services
         private readonly IPREORDERSRepository _PreOrdersDal;
         private readonly IUnitOfWork _UnitOfWork;
         private readonly ISysUserInfoServices _SysUserInfoServices;
-        private readonly IDEPARTMENTSServices _DepartmentsServices;
-        public InspectAcceptanceServices(IORDERSRepository orderDal, IFOLDERSRepository foldersDal, IPREORDERSRepository preOrdersDal, IUnitOfWork unitOfWork, ISysUserInfoServices sysUserInfoServices, IDEPARTMENTSServices departmentsServices)
+        private readonly IRASCLIENTSRepository _RasClientsDal;
+        public InspectAcceptanceServices(
+            IORDERSRepository orderDal, 
+            IFOLDERSRepository foldersDal, 
+            IPREORDERSRepository preOrdersDal,
+            IUnitOfWork unitOfWork, 
+            ISysUserInfoServices sysUserInfoServices,
+            IRASCLIENTSRepository rasClientsDal)
         {
             this._OrderDal = orderDal;
             this._FoldersDal = foldersDal;
             this._PreOrdersDal = preOrdersDal;
             this._UnitOfWork = unitOfWork;
             this._SysUserInfoServices = sysUserInfoServices;
-            this._DepartmentsServices = departmentsServices;
+            this._RasClientsDal = rasClientsDal;
             base.BaseDal = foldersDal;
         }
 
@@ -35,29 +42,73 @@ namespace NQI_LIMS.Services
         {
             try
             {
-                #region 获取用户部门信息
+                #region 获取用户信息
                 var mUserInfo = _SysUserInfoServices.QueryById(iUserId).Result;//用户信息
-                /*
-                 20200801 没有组织架构，后期要增加，
-                临时在adress字段 里面配置用户的部门信息
-                格式： DEPT部门编号RY01
-                 */
                  #endregion
 
              
                 _UnitOfWork.BeginTran();
-                #region 受理单
+
+                #region 查询或保存企业
+                // CHECK_TYPE : 1:现场抽样(生产) 2:市场买样 3：电商买样 4：其他来源
+                //生产单位
+                RASCLIENTS mScdwInfor = null;
+                if (model.PmPlanSubInfo.CHECK_TYPE == "1")
+                {
+                    mScdwInfor = this.SaveRaseClient(model.PmProduceUnit.PRO_NAME, model.PmProduceUnit.PRO_ADDR, model.PmProduceUnit.PRO_TEL, mUserInfo.uRealName, model.Departments.DEPTNAME, model.PmProduceUnit.PRO_BUS_LICENCE, model.Departments.DEPT);
+                }
+                //受检单位
+                RASCLIENTS mSjdwInfor = null;
+                if(model.PmPlanSubInfo.CHECK_TYPE == "2")
+                {
+                    mSjdwInfor = this.SaveRaseClient(model.PmCaryInfo.CARY_NAME, model.PmCaryInfo.CARY_ADDR, model.PmCaryInfo.CARY_TEL, mUserInfo.uRealName, model.Departments.DEPTNAME, model.PmCaryInfo.UNIFIED_SOCIAL_CREDIT_CODE, model.Departments.DEPT);
+                }
+                else if (model.PmPlanSubInfo.CHECK_TYPE == "3")
+                {
+                    //网店信息
+                    mSjdwInfor = this.SaveRaseClient(model.PmEcPlatFormInfo.ONLINE_STORE_NAME, model.PmEcPlatFormInfo.ONLINE_STORE_ADDR, model.PmEcPlatFormInfo.ONLINE_STORE_CONTACT, mUserInfo.uRealName, model.Departments.DEPTNAME, "", model.Departments.DEPT);
+                }
+                #endregion
+
+                #region 1. 受理单
                 FOLDERS folders = new FOLDERS();
                 folders.FOLDERNO = this.CreateFolderNo();//生成规则 
-                
-                folders.FLDSTS = "Evaluating";
-                folders.DISPSTS = "合同评审中";
+                folders.DEPT = model.Departments.DEPT;
+                folders.REMARKS = model.PmPlanSubInfo.REMARKS;
+                folders.ORIGSTS = "N";
+                folders.FLDSTS = "Draft";
+                folders.DISPSTS = "新建";
                 folders.SAMPLECLASSFORCCC = "3C样品种类名称";
                 folders.CODEOFINSPECTIONORG = "承检机构代码";
-                folders.TESTORGREGFORM = "南京市产品质量监督检验院";
+                folders.DETECTIONFORSPOTCHECK = model.AddSupervisePlan.TASKCLASS;
+                folders.TESTORGREGFORM = model.Departments.DEPTNAME;
+                folders.TESTPLACE = model.Departments.LOCATION;
                 folders.TESTTYPE = "01";
-           
-
+                folders.PLANNO = model.AddSupervisePlan.PLANNO;
+                folders.TASKSOURCE = model.AddSupervisePlan.TASKSOURCE;
+                folders.TESTTASKNOFORCCC = "委托单位协议编号";
+                //生产单位
+                folders.COMPANYNOOFPRODUCTIONORG = mScdwInfor == null ? null : mScdwInfor.RASCLIENTID;
+                folders.ADDRESSOFPRODUCTIONORG = mScdwInfor == null ? null : mScdwInfor.ADDRESS;
+                folders.PHONEOFPRODUCTIONORG = mScdwInfor == null ? null : mScdwInfor.PHONE;
+                folders.NAMEOFPRODUCTIONORG = mScdwInfor == null ? null : mScdwInfor.COMPNAME;
+                folders.PRODUCTIONOFBUSINESSLICENSE = mScdwInfor == null ? null : mScdwInfor.STAXCODE;
+                //受检单位
+                folders.ADDRESSOFORGBETESTED = mSjdwInfor == null? null: mSjdwInfor.ADRESS;
+                folders.PHONEOFORGBETESTED = mSjdwInfor == null ? null : mSjdwInfor.PHONE;
+                folders.NAMEOFORGBETESTED = mSjdwInfor == null ? null : mSjdwInfor.COMPNAME;
+                folders.ACCEPTER = mUserInfo.uRealName;
+                folders.ACCEPTDATE = DateTime.Now;
+                //委托单位
+                folders.NAMEOFENTRUSTORG = model.AddSupervisePlan.TASKSOURCE;
+                folders.SAMPLESOURCEREGFORM = "抽样";
+                folders.DIVISIONCODE = model.Divisions.DIVISIONCODE;
+                folders.PAYSTS = "N";
+                folders.LOGDATE = DateTime.Now;
+                folders.ISSUBCONTRACT = "不同意";
+                folders.ISSUPPLIER = "N";
+                folders.CREATER = mUserInfo.uLoginName;
+                folders.EVALUATIONREQ = "评价";
 
                 var IsFolderExist = _FoldersDal.GeyFolderByNo(folders.FOLDERNO) != null ? true : false;
                 if (!IsFolderExist)
@@ -70,10 +121,53 @@ namespace NQI_LIMS.Services
                 }
                 #endregion
 
-                #region 样品单
+                #region 2. 样品单
                 PREORDERS preoders = new PREORDERS();
                 preoders.PREORDNO = this.CreatPreOrderNo("");//获取部门编号信息
                 preoders.FOLDERNO = folders.FOLDERNO;
+                preoders.STATUS = "Draft";
+                preoders.DISPSTS = "新建";
+                preoders.REMARKS = model.PmPlanSubInfo.REMARKS;
+                preoders.TESTCOSTSFORSAMPLE = 0;
+                preoders.TAKEREPORTMETHOD = "自取";
+                preoders.RECEIVEDATE = DateTime.Today;
+                preoders.STORAGEMETHOD = "常温";
+                preoders.TREATMENTFORSAMPLE = "销毁";
+                preoders.ARRIVDATEFORSAMPLE = DateTime.Today;
+                preoders.SPECMODEL = model.PmPlanSubInfo.GOODS_SCALE;
+                preoders.SAMPLENAME = model.PmPlanSubInfo.GOODS_NAME;
+                preoders.TOTALQUANTITY = model.PmPlanSubInfo.GOODS_CHECK_NUM;
+                preoders.SAMPLESTATE = "封样完好、符合检验要求";
+                preoders.REQUIREDCOMPLETIONDATE = DateTime.Today.AddDays(7);
+                preoders.DEPT = model.Departments.DEPT;
+                preoders.DIVISIONCODE = model.Divisions.DIVISIONCODE;
+                preoders.ISRETURNSAMPLE = "N";
+                preoders.ISEMERGENCY = "0";
+                preoders.PAYSTS = "未缴费";
+                preoders.LOGDATE = DateTime.Now;
+                preoders.ISMAKESAMPLE = "N";
+                preoders.ISADD_G = "N";
+                preoders.INVOICEISSUEMETHOD = "自取";
+                preoders.TAKESAMPLINGPERSON = mUserInfo.uRealName;
+                preoders.STORAGECONDITION = 0;
+                preoders.OTHERSAMPLETYPE = 0;
+                preoders.OTHERRESTAURANTTACHE = 0;
+                preoders.OTHERCIRCULATIONTACHE = 0;
+                preoders.STRIPNUMBERANDSUM = 0;
+                preoders.SAMPLINGPRODUCTIMPLEMENTATION = "按文件要求";
+                preoders.SAMPLEDELIVERYMODE = "抽样";
+                preoders.REPORTRECYCLE = "Y";
+                preoders.SELFNUMBER = model.PmPlanSubInfo.PLAN_CODE + model.PmPlanSubInfo.LOT_NUM;
+                preoders.PRINTNUM = 0;
+                preoders.ZHENGSHUNO = model.PmPlanSubInfo.GOODS_CERT_CODE;
+                preoders.ISADD_FG = "N";
+                preoders.ALLOTTYPE = "CP";
+                preoders.PRINTBYNUMS = 0;
+                preoders.PRINTJYNUMS = 1;
+                preoders.ISNEEDCOVERING = "N";
+                preoders.TESTPERIOD = 7;
+                preoders.REALPAY2 = 0;
+
                 var IsPreExist = _PreOrdersDal.GetPreOrdersByNo(preoders.PREORDNO) != null ? true : false;
                 if (!IsPreExist)
                 {
@@ -81,10 +175,21 @@ namespace NQI_LIMS.Services
                 }
                 #endregion
 
-                #region 子样单
+                #region 3. 子样单
                 ORDERS orders = new ORDERS();
                 orders.ORDNO = string.Format("{0}-001", preoders.PREORDNO);
+                orders.ORIGSTS = "N";
+                orders.STATUS = "Draft";
+                orders.DISPSTS = "新建";
+                orders.CREATETIME = DateTime.Now;
+                orders.SAMPLENAME = model.PmPlanSubInfo.GOODS_NAME ;
+                orders.DEPT = model.Departments.DEPT;
+                orders.DIVISIONCODE = model.Divisions.DIVISIONCODE;
+                orders.ISMAKESAMPLE = "N";
+                orders.ISPREPARE = "N";
+                orders.ISCHOICE = "N";
                 orders.FOLDERNO = folders.FOLDERNO;
+                orders.MAJORUSRNAM = mUserInfo.uLoginName;
                 orders.PREORDNO = preoders.PREORDNO;
                 var IsOrderExist = _OrderDal.GetOrdersByNo(orders.ORDNO) != null ? true : false;
                 if (!IsOrderExist)
@@ -92,6 +197,7 @@ namespace NQI_LIMS.Services
                     _OrderDal.SaveOrders(orders);
                 }
                 #endregion
+              
                 _UnitOfWork.CommitTran();
                 return true;
             }
@@ -103,6 +209,11 @@ namespace NQI_LIMS.Services
             }
         }
 
+        #region 获取 受理单编号
+        /// <summary>
+        /// 获取 受理单编号
+        /// </summary>
+        /// <returns></returns>
         public string CreateFolderNo()
         {
             string mFolderNo = string.Empty;
@@ -128,7 +239,14 @@ namespace NQI_LIMS.Services
             mFolderNo = mPrefixYear + mSerialNumString;
             return mFolderNo;
         }
+        #endregion
 
+        #region 获取 样品编号
+        /// <summary>
+        /// 获取 样品编号
+        /// </summary>
+        /// <param name="iDepartMentCode"></param>
+        /// <returns></returns>
         public string CreatPreOrderNo(string iDepartMentCode)
         {
             iDepartMentCode.NotAllowNullOrEmpty("部门编号不能为空");
@@ -155,5 +273,42 @@ namespace NQI_LIMS.Services
             mPreOrderNo = string.Format("{0}({1}){2}-{3}", mPrefix, mPrefixYear, iDepartMentCode, mSerialNumString);
             return mPreOrderNo;
         }
-    }
-}
+        #endregion
+
+        #region 保存客户信息
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="clientName"></param>
+        /// <returns></returns>
+        public RASCLIENTS SaveRaseClient(string clientName,string adress, string tell,string createBy,string deptName,string staxCode,string dept)
+        {
+            var client = _RasClientsDal.GetRaseClientsByName(clientName);
+            if (client == null)
+            {
+                client.RASCLIENTID = _RasClientsDal.GetMaxClientCode();
+                client = new RASCLIENTS();
+                client.ORIGSTS = "N";
+                client.CATEGORY = "非协议客户";
+                client.COMPNAME = clientName;
+                client.SHORTNAME = "XXXX";
+                client.ADRESS = adress;
+                client.PHONE = tell;
+                client.ADDEDBY = createBy;
+                client.ADDDATE = DateTime.Now;
+                client.STATUS = "Done";
+                client.DEPT = deptName;
+                client.STAXCODE = staxCode;
+                client.ISPUBLIC = "1";
+                client.STARLIMSDEPT = dept;
+                client.ISDISCARD = "N";
+                client.DISPSTATUS = "完成";
+                client.INSTITUTIONNAME = "南京市产品质量监督检验院";
+                _RasClientsDal.Add(client);
+            }
+            
+            return client;
+        }
+        #endregion
+    }//class
+}//namespace

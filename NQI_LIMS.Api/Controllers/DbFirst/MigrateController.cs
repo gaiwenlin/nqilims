@@ -9,12 +9,13 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace NQI_LIMS.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    //[Authorize(Permissions.Name)]
+    [Authorize(Permissions.Name)]
     public class MigrateController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;

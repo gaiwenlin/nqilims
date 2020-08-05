@@ -93,9 +93,12 @@ namespace NQI_LIMS.Api.Controllers
     public async Task<MessageModel<string>> Delete(int id = 0)
     {
         var data = new MessageModel<string>();
+
+            //临时
+            id = 0;
         if (id > 0)
         {
-            //var detail = await _PREORDTASKServices.QueryById(id);
+            var detail = await _PREORDTASKServices.QueryById(id);
 
             //detail.IsDeleted = true;
 

@@ -31,18 +31,33 @@ namespace NQI_LIMS.Model.Models
         /// </summary>
         public decimal? REPORTSCOPIES { get; set; }
 
+        /// <summary>
+        /// 备注
+        /// </summary>
         public string REMARKS { get; set; }
 
+        /// <summary>
+        /// 默认为N
+        /// </summary>
         public string ORIGSTS { get; set; }
 
         public string METADATA_GUID { get; set; }
 
+        /// <summary>
+        /// 英文状态
+        /// </summary>
         public string FLDSTS { get; set; }
 
+        /// <summary>
+        /// 中文状态
+        /// </summary>
         public string DISPSTS { get; set; }
 
         public string SAMPLECLASSFORCCC { get; set; }
 
+        /// <summary>
+        /// 受理单编号
+        /// </summary>
         [SugarColumn(IsPrimaryKey = true)]
         public string FOLDERNO { get; set; }
 
@@ -71,13 +86,24 @@ namespace NQI_LIMS.Model.Models
         public string PHONEOFSUPERVISINGORG { get; set; }
 
         public string NAMEOFSUPERVISINGORG { get; set; }
-
+        /// <summary>
+        /// 抽样类型
+        /// </summary>
         public string DETECTIONFORSPOTCHECK { get; set; }
 
+        /// <summary>
+        /// 实验室
+        /// </summary>
         public string TESTORGREGFORM { get; set; }
 
+        /// <summary>
+        /// 地址
+        /// </summary>
         public string TESTPLACE { get; set; }
 
+        /// <summary>
+        /// 测试类型 01 监督；03 委托
+        /// </summary>
         public string TESTTYPE { get; set; }
 
         public string OBJECTIVEOFTEST { get; set; }
@@ -101,7 +127,9 @@ namespace NQI_LIMS.Model.Models
         public string POSTCODEOFBUILDORG { get; set; }
 
         public string ECONOMYCLASSTYPE { get; set; }
-
+        /// <summary>
+        /// 任务编号
+        /// </summary>
         public string PLANNO { get; set; }
 
         public string BLUEBOOKNO { get; set; }
@@ -114,6 +142,9 @@ namespace NQI_LIMS.Model.Models
 
         public string SALESLASTYEAR { get; set; }
 
+        /// <summary>
+        /// 任务来源
+        /// </summary>
         public string TASKSOURCE { get; set; }
 
         public string NAMEOFDESIGNORG { get; set; }
@@ -122,20 +153,34 @@ namespace NQI_LIMS.Model.Models
 
         public string APPLICATIONNOFORCCC { get; set; }
 
+
+        /// <summary>
+        /// 委托单位协议编号
+        /// </summary>
         public string TESTTASKNOFORCCC { get; set; }
 
         public string CHECKUPDEPARTFORCCC { get; set; }
-
+        /// <summary>
+        /// 生产单位编号
+        /// </summary>
         public string COMPANYNOOFPRODUCTIONORG { get; set; }
-
+        /// <summary>
+        /// 生产单位地址
+        /// </summary>
         public string ADDRESSOFPRODUCTIONORG { get; set; }
-
+        /// <summary>
+        /// 生产单位电话
+        /// </summary>
         public string PHONEOFPRODUCTIONORG { get; set; }
 
         public string CONTACTPERSONOFPRODUCTIONORG { get; set; }
-
+        /// <summary>
+        /// 生产单位名称
+        /// </summary>
         public string NAMEOFPRODUCTIONORG { get; set; }
-
+        /// <summary>
+        /// 生产单位组织机构代码证
+        /// </summary>
         public string PRODUCTIONOFBUSINESSLICENSE { get; set; }
 
         public string POSTCODEOFPRODUCTIONORG { get; set; }
@@ -155,15 +200,27 @@ namespace NQI_LIMS.Model.Models
         public string POSTCODEOFCONSTRUCTORG { get; set; }
 
         public string FORMATOFHOMEPAGE { get; set; }
-
+        /// <summary>
+        /// 受检单位地址
+        /// </summary>
         public string ADDRESSOFORGBETESTED { get; set; }
-
+        /// <summary>
+        /// 受检单位法人
+        /// </summary>
         public string CORPORATIONOFORGBETESTED { get; set; }
-
+        /// <summary>
+        /// 受检单位电话
+        /// </summary>
         public string PHONEOFORGBETESTED { get; set; }
 
+        /// <summary>
+        /// 受检单位法人
+        /// </summary>
         public string CONTACTPERSONOFORGBETESTED { get; set; }
 
+        /// <summary>
+        /// 受检单位名称
+        /// </summary>
         public string NAMEOFORGBETESTED { get; set; }
 
         public string COMPANYNOOFORGBETESTED { get; set; }
@@ -171,7 +228,9 @@ namespace NQI_LIMS.Model.Models
         public string NATUREOFORGBETESTED { get; set; }
 
         public string REGIONOFORGBETESTED { get; set; }
-
+        /// <summary>
+        /// 受检单位组织机构代码证
+        /// </summary>
         public string ORGBETESTEDOFBUSINESSLICENSE { get; set; }
 
         public string POSTCODEOFORGBETESTED { get; set; }
@@ -182,28 +241,50 @@ namespace NQI_LIMS.Model.Models
 
         public string CODEOFACCEPTORG { get; set; }
 
+        /// <summary>
+        /// 接收人
+        /// </summary>
         public string ACCEPTER { get; set; }
 
+        /// <summary>
+        /// 接收时间
+        /// </summary>
         public DateTime? ACCEPTDATE { get; set; }
 
         public string NAMEOFSENDSAMPLEORG { get; set; }
 
+        /// <summary>
+        /// 委托单位地址
+        /// </summary>
         public string ADDRESSOFENTRUSTORG { get; set; }
 
+        /// <summary>
+        /// 委托单位法人
+        /// </summary>
         public string CORPORATIONOFENTRUSTORG { get; set; }
-
+        /// <summary>
+        /// 委托单位电话
+        /// </summary>
         public string PHONEOFENTRUSTORG { get; set; }
-
+        /// <summary>
+        /// 委托单位联系人
+        /// </summary>
         public string CONTACTPERSONOFENTRUSTORG { get; set; }
-
+        /// <summary>
+        /// 委托单位
+        /// </summary>
         public string NAMEOFENTRUSTORG { get; set; }
-
+        /// <summary>
+        /// 委托单位编号
+        /// </summary>
         public string COMPANYNOOFENTRUSTORG { get; set; }
 
         public string POSTCODEOFENTRUSTORG { get; set; }
 
         public string ORGCODEOFENTRUSTORG { get; set; }
-
+        /// <summary>
+        /// 委托人
+        /// </summary>
         public string CONSIGNOR { get; set; }
 
         public DateTime? ENTRUSTDATE { get; set; }
@@ -211,7 +292,9 @@ namespace NQI_LIMS.Model.Models
         public string AGREEMENTNO { get; set; }
 
         public string SAMPLECOMINGWAY { get; set; }
-
+        /// <summary>
+        /// 送样，抽样
+        /// </summary>
         public string SAMPLESOURCEREGFORM { get; set; }
 
         public decimal? MONTH { get; set; }

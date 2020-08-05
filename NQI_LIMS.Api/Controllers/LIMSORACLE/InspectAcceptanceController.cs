@@ -14,6 +14,7 @@ namespace NQI_LIMS.Api.Controllers.LIMSORACLE
 {
     [Route("api/[controller]")]
     [ApiController]
+   // [Authorize(Permissions.Name)]
     public class InspectAcceptanceController : ControllerBase
     {
         private readonly IInspectAcceptanceServices _InspectAcceptanceServices;
