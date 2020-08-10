@@ -16,11 +16,21 @@ namespace NQI_LIMS.Services.localhost
     {
         private readonly IPM_INSPECTRepository _dal;
         private readonly ISysUserInfoServices _SysUserInfoServices;
-        public PM_INSPECTServices(IPM_INSPECTRepository dal, ISysUserInfoServices sysUserInfoServices)
+        private readonly IADD_SUPERVISEPLANRepository _AddSuperviserPlanDal;
+        private readonly IDEPARTMENTSRepository _DepartmentsDal;
+        private readonly IDIVISIONSRepository _DivisionsDal;
+        public PM_INSPECTServices(IPM_INSPECTRepository dal, 
+            ISysUserInfoServices sysUserInfoServices, 
+            IADD_SUPERVISEPLANRepository addSuperviserPlanDal, 
+            IDEPARTMENTSRepository departmentsDal, 
+            IDIVISIONSRepository divisionsDal)
         {
             this._dal = dal;
             this._SysUserInfoServices = sysUserInfoServices;
             base.BaseDal = dal;
+            this._AddSuperviserPlanDal = addSuperviserPlanDal;
+            this._DepartmentsDal = departmentsDal;
+            this._DivisionsDal = divisionsDal;
         }
         public JObject GetPmInsPectByCode(int iUserId, string iCodeNum)
         {
@@ -39,13 +49,15 @@ namespace NQI_LIMS.Services.localhost
                 mPmPlanSubInfo.NotAllowNull("未查询到抽查任务单信息");
                 #endregion
 
-                #region 获得任务信息 - 查询NQI_LIMS
+                #region 获得任务信息 ****查询NQI_LIMS********
                 ADD_SUPERVISEPLAN mAddSupervisePlan = null;
-                mAddSupervisePlan = _dal.GetSupervisePlanByCode(mCode);
+                mAddSupervisePlan = _AddSuperviserPlanDal.GetSupervisePlanByCode(mCode);
                 #endregion
 
-                #region 获取用户部门信息
+                #region 获取用户部门信息****查询NQI_LIMS********
+
                 var mUserInfo = _SysUserInfoServices.QueryById(iUserId).Result;//用户信息
+                mUserInfo.addr.NotAllowNullOrEmpty("部门编号");
                 /*
                  20200801 没有组织架构，后期要增加，
                 临时在adress字段 里面配置用户的部门信息
@@ -55,8 +67,8 @@ namespace NQI_LIMS.Services.localhost
                 DIVISIONS mDivisions = null;
                 DEPARTMENTS mDepartments = null;
 
-                mDepartments = _dal.GetDepartmentsByCode(mUserInfo.addr);
-                mDivisions = _dal.GetDivisionsByCode(mDepartments.PARENTDIV);
+                mDepartments = _DepartmentsDal.GetDepartmentsByCode(mUserInfo.addr);
+                mDivisions = _DivisionsDal.GetDivisionsByCode(mDepartments.PARENTDIV);
                 #endregion
 
                 #region 任务表
@@ -64,6 +76,10 @@ namespace NQI_LIMS.Services.localhost
                 if (!string.IsNullOrEmpty(mPmPlanSubInfo.PLAN_CODE))
                 {
                     mPmPlanInfo = _dal.GetPmPlanByCode(mPmPlanSubInfo.PLAN_CODE);
+                }
+                else
+                {
+                    throw new MyException("为查询到对应编号的数据。", data: iCodeNum);
                 }
                 #endregion
 

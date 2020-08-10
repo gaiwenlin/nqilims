@@ -8,5 +8,11 @@ namespace NQI_LIMS.IRepository
 	/// </summary>	
     public interface IDIVISIONSRepository : IBaseRepository<DIVISIONS>
     {
+        /// <summary>
+        /// 获得中心
+        /// </summary>
+        /// <param name="Divisioncode"></param>
+        /// <returns></returns>
+        DIVISIONS GetDivisionsByCode(string Divisioncode);
     }
 }

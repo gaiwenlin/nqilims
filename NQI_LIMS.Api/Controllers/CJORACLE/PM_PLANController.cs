@@ -10,9 +10,12 @@ using Newtonsoft.Json.Linq;
 
 namespace NQI_LIMS.Api.Controllers
 {
+    /// <summary>
+    /// 任务表
+    /// </summary>
     [Route("api/[controller]/[action]")]
     [ApiController]
-   // [Authorize(Permissions.Name)]
+    [Authorize(Permissions.Name)]
     public class PM_PLANController : ControllerBase
     {
         #region 自动生成代码
@@ -116,7 +119,12 @@ namespace NQI_LIMS.Api.Controllers
         }
         #endregion
 
-        #region 根据抽查批次号获取信息
+        #region 根据任务编号获取信息
+        /// <summary>
+        /// 根据任务编号获取信息
+        /// </summary>
+        /// <param name="iCodeNum"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult GetPmPlanByCode(string iCodeNum)
         {

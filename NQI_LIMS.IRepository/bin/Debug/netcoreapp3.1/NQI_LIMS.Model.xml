@@ -285,9 +285,34 @@
             
             </summary>
         </member>
+        <member name="P:NQI_LIMS.Model.Models.ADD_SUPERVISEPLAN.PLANNO">
+            <summary>
+            任务编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.ADD_SUPERVISEPLAN.TASKSOURCE">
+            <summary>
+            任务来源
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.ADD_SUPERVISEPLAN.TASKCLASS">
+            <summary>
+            抽样类型
+            </summary>
+        </member>
         <member name="T:NQI_LIMS.Model.Models.DEPARTMENTS">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.DEPARTMENTS.DEPTNAME">
+            <summary>
+            实验室名
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.DEPARTMENTS.LOCATION">
+            <summary>
+            地址
             </summary>
         </member>
         <member name="T:NQI_LIMS.Model.Models.DIVISIONS">
@@ -313,6 +338,171 @@
         <member name="P:NQI_LIMS.Model.Models.FOLDERS.REPORTSCOPIES">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.REMARKS">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.ORIGSTS">
+            <summary>
+            默认为N
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.FLDSTS">
+            <summary>
+            英文状态
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.DISPSTS">
+            <summary>
+            中文状态
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.FOLDERNO">
+            <summary>
+            受理单编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.DETECTIONFORSPOTCHECK">
+            <summary>
+            抽样类型
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.TESTORGREGFORM">
+            <summary>
+            实验室
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.TESTPLACE">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.TESTTYPE">
+            <summary>
+            测试类型 01 监督；03 委托
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.PLANNO">
+            <summary>
+            任务编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.TASKSOURCE">
+            <summary>
+            任务来源
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.TESTTASKNOFORCCC">
+            <summary>
+            委托单位协议编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.COMPANYNOOFPRODUCTIONORG">
+            <summary>
+            生产单位编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.ADDRESSOFPRODUCTIONORG">
+            <summary>
+            生产单位地址
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.PHONEOFPRODUCTIONORG">
+            <summary>
+            生产单位电话
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.NAMEOFPRODUCTIONORG">
+            <summary>
+            生产单位名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.PRODUCTIONOFBUSINESSLICENSE">
+            <summary>
+            生产单位组织机构代码证
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.ADDRESSOFORGBETESTED">
+            <summary>
+            受检单位地址
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.CORPORATIONOFORGBETESTED">
+            <summary>
+            受检单位法人
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.PHONEOFORGBETESTED">
+            <summary>
+            受检单位电话
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.CONTACTPERSONOFORGBETESTED">
+            <summary>
+            受检单位法人
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.NAMEOFORGBETESTED">
+            <summary>
+            受检单位名称
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.ORGBETESTEDOFBUSINESSLICENSE">
+            <summary>
+            受检单位组织机构代码证
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.ACCEPTER">
+            <summary>
+            接收人
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.ACCEPTDATE">
+            <summary>
+            接收时间
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.ADDRESSOFENTRUSTORG">
+            <summary>
+            委托单位地址
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.CORPORATIONOFENTRUSTORG">
+            <summary>
+            委托单位法人
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.PHONEOFENTRUSTORG">
+            <summary>
+            委托单位电话
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.CONTACTPERSONOFENTRUSTORG">
+            <summary>
+            委托单位联系人
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.NAMEOFENTRUSTORG">
+            <summary>
+            委托单位
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.COMPANYNOOFENTRUSTORG">
+            <summary>
+            委托单位编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.CONSIGNOR">
+            <summary>
+            委托人
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.FOLDERS.SAMPLESOURCEREGFORM">
+            <summary>
+            送样，抽样
             </summary>
         </member>
         <member name="P:NQI_LIMS.Model.Models.FOLDERS.DIVISIONCODE">
@@ -345,6 +535,16 @@
             
             </summary>
         </member>
+        <member name="P:NQI_LIMS.Model.Models.PREORDERS.SELFNUMBER">
+            <summary>
+            抽样编号或其他编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.PREORDERS.TESTPERIOD">
+            <summary>
+            测试周期
+            </summary>
+        </member>
         <member name="T:NQI_LIMS.Model.Models.PREORDTASK">
             <summary>
             
@@ -353,6 +553,26 @@
         <member name="T:NQI_LIMS.Model.Models.RASCLIENTS">
             <summary>
             客户
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.RASCLIENTS.COMPNAME">
+            <summary>
+            公司名
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.RASCLIENTS.RASCLIENTID">
+            <summary>
+            单位编号
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.RASCLIENTS.ADRESS">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:NQI_LIMS.Model.Models.RASCLIENTS.STAXCODE">
+            <summary>
+            组织机构代码证
             </summary>
         </member>
         <member name="T:NQI_LIMS.Model.Models.RESULTS">

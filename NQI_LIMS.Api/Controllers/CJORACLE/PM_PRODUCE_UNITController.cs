@@ -10,14 +10,15 @@ using Newtonsoft.Json.Linq;
 
 namespace NQI_LIMS.Api.Controllers
 {
+    /// <summary>
+    /// 生产企业信息
+    /// </summary>
     [Route("api/[controller]/[action]")]
     [ApiController]
     [Authorize(Permissions.Name)]
     public class PM_PRODUCE_UNITController : ControllerBase
     {
         #region 自动生成代码
-
-     
         /// <summary>
         /// 服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
         /// </summary>
@@ -118,7 +119,12 @@ namespace NQI_LIMS.Api.Controllers
         }
         #endregion
 
-        #region 根据抽查批次号获取信息
+        #region 根据企业编号获取信息
+        /// <summary>
+        /// 根据企业编号获取信息
+        /// </summary>
+        /// <param name="iProCode"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult GetPmProduceUnitByCode(string iProCode)
         {

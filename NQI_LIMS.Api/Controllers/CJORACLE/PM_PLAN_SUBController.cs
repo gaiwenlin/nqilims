@@ -10,9 +10,12 @@ using Newtonsoft.Json.Linq;
 
 namespace NQI_LIMS.Api.Controllers
 {
+    /// <summary>
+    /// 抽查批次表
+    /// </summary>
     [Route("api/[controller]/[action]")]
     [ApiController]
-    //[Authorize(Permissions.Name)]
+    [Authorize(Permissions.Name)]
     public class PM_PLAN_SUBController : ControllerBase
     {
         /// <summary>
@@ -119,6 +122,11 @@ namespace NQI_LIMS.Api.Controllers
         #endregion
 
         #region 根据抽查批次号获取信息
+        /// <summary>
+        /// 根据抽查批次号获取信息
+        /// </summary>
+        /// <param name="iCodeNum"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult GetPmPlanSubByCode(string iCodeNum)
         {

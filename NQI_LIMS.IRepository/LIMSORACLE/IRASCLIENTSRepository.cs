@@ -8,5 +8,18 @@ namespace NQI_LIMS.IRepository
 	/// </summary>	
     public interface IRASCLIENTSRepository : IBaseRepository<RASCLIENTS>
     {
+        /// <summary>
+        /// 根据客户名查找客户
+        /// </summary>
+        /// <param name="clientName"></param>
+        /// <returns></returns>
+        RASCLIENTS GetRaseClientsByName(string clientName);
+
+        /// <summary>
+        /// 获得最大的
+        /// </summary>
+        /// <returns></returns>
+        string GetMaxClientCode();
+
     }
 }

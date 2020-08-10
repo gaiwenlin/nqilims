@@ -680,9 +680,19 @@
             </summary>
             <param name="id"></param>
         </member>
+        <member name="T:NQI_LIMS.Api.Controllers.PM_CARYController">
+            <summary>
+            受检单位信息
+            </summary>
+        </member>
         <member name="F:NQI_LIMS.Api.Controllers.PM_CARYController._PM_CARYServices">
             <summary>
             服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="T:NQI_LIMS.Api.Controllers.PM_EC_PLATFORMController">
+            <summary>
+            网点信息控制类
             </summary>
         </member>
         <member name="F:NQI_LIMS.Api.Controllers.PM_EC_PLATFORMController._PM_EC_PLATFORMServices">
@@ -690,14 +700,48 @@
             服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
             </summary>
         </member>
+        <member name="T:NQI_LIMS.Api.Controllers.PM_EXEC_UINTController">
+            <summary>
+            抽样单位信息
+            </summary>
+        </member>
         <member name="F:NQI_LIMS.Api.Controllers.PM_EXEC_UINTController._PM_EXEC_UINTServices">
             <summary>
             服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
             </summary>
         </member>
+        <member name="M:NQI_LIMS.Api.Controllers.PM_EXEC_UINTController.GetPmPlanByCode(System.String)">
+            <summary>
+            根据抽查批次号获取信息
+            </summary>
+            <param name="iExecCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NQI_LIMS.Api.Controllers.CJORACLE.PM_INSPECTController">
+            <summary>
+            查询抽检数据
+            </summary>
+        </member>
+        <member name="M:NQI_LIMS.Api.Controllers.CJORACLE.PM_INSPECTController.GetPmInsPectByCode(System.String)">
+            <summary>
+            根据抽检批号查询数据，包括企业信息等
+            </summary>
+            <param name="iCodeNum"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NQI_LIMS.Api.Controllers.PM_OTHERController">
+             <summary>
+            其他来源单位 
+             </summary>
+        </member>
         <member name="F:NQI_LIMS.Api.Controllers.PM_OTHERController._PM_OTHERServices">
             <summary>
             服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="T:NQI_LIMS.Api.Controllers.PM_PLANController">
+            <summary>
+            任务表
             </summary>
         </member>
         <member name="F:NQI_LIMS.Api.Controllers.PM_PLANController._PM_PLANServices">
@@ -705,9 +749,33 @@
             服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
             </summary>
         </member>
+        <member name="M:NQI_LIMS.Api.Controllers.PM_PLANController.GetPmPlanByCode(System.String)">
+            <summary>
+            根据任务编号获取信息
+            </summary>
+            <param name="iCodeNum"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NQI_LIMS.Api.Controllers.PM_PLAN_SUBController">
+            <summary>
+            抽查批次表
+            </summary>
+        </member>
         <member name="F:NQI_LIMS.Api.Controllers.PM_PLAN_SUBController._PM_PLAN_SUBServices">
             <summary>
             服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="M:NQI_LIMS.Api.Controllers.PM_PLAN_SUBController.GetPmPlanSubByCode(System.String)">
+            <summary>
+            根据抽查批次号获取信息
+            </summary>
+            <param name="iCodeNum"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NQI_LIMS.Api.Controllers.PM_PRODUCE_UNITController">
+            <summary>
+            生产企业信息
             </summary>
         </member>
         <member name="F:NQI_LIMS.Api.Controllers.PM_PRODUCE_UNITController._PM_PRODUCE_UNITServices">
@@ -715,9 +783,26 @@
             服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
             </summary>
         </member>
+        <member name="M:NQI_LIMS.Api.Controllers.PM_PRODUCE_UNITController.GetPmProduceUnitByCode(System.String)">
+            <summary>
+            根据企业编号获取信息
+            </summary>
+            <param name="iProCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NQI_LIMS.Api.Controllers.ADD_SUPERVISEPLANController">
+            <summary>
+            LIMS 任务表
+            </summary>
+        </member>
         <member name="F:NQI_LIMS.Api.Controllers.ADD_SUPERVISEPLANController._ADD_SUPERVISEPLANServices">
             <summary>
             服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="T:NQI_LIMS.Api.Controllers.DEPARTMENTSController">
+            <summary>
+            LIMS 部门表
             </summary>
         </member>
         <member name="F:NQI_LIMS.Api.Controllers.DEPARTMENTSController._DEPARTMENTSServices">
@@ -725,14 +810,41 @@
             服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
             </summary>
         </member>
+        <member name="T:NQI_LIMS.Api.Controllers.DIVISIONSController">
+            <summary>
+            LIMS 中心
+            </summary>
+        </member>
         <member name="F:NQI_LIMS.Api.Controllers.DIVISIONSController._DIVISIONSServices">
             <summary>
             服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
             </summary>
         </member>
+        <member name="T:NQI_LIMS.Api.Controllers.FOLDERSController">
+            <summary>
+            受理单
+            </summary>
+        </member>
         <member name="F:NQI_LIMS.Api.Controllers.FOLDERSController._FOLDERSServices">
             <summary>
             服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="T:NQI_LIMS.Api.Controllers.LIMSORACLE.InspectAcceptanceController">
+            <summary>
+            监督抽查数据同步
+            </summary>
+        </member>
+        <member name="M:NQI_LIMS.Api.Controllers.LIMSORACLE.InspectAcceptanceController.SaveInspectAcceptance(NQI_LIMS.Model.ViewModels.InputInsepectAcceptanceModel)">
+            <summary>
+            保存抽查业务信息
+            </summary>
+            <param name="iModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NQI_LIMS.Api.Controllers.ORDERSController">
+            <summary>
+            子样信息表
             </summary>
         </member>
         <member name="F:NQI_LIMS.Api.Controllers.ORDERSController._ORDERSServices">
@@ -755,9 +867,19 @@
             服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
             </summary>
         </member>
+        <member name="T:NQI_LIMS.Api.Controllers.PREORDTASKController">
+            <summary>
+            样品编号
+            </summary>
+        </member>
         <member name="F:NQI_LIMS.Api.Controllers.PREORDTASKController._PREORDTASKServices">
             <summary>
             服务器接口，因为是模板生成，所以首字母是大写的，自己可以重构下
+            </summary>
+        </member>
+        <member name="T:NQI_LIMS.Api.Controllers.RASCLIENTSController">
+            <summary>
+            客户
             </summary>
         </member>
         <member name="F:NQI_LIMS.Api.Controllers.RASCLIENTSController._RASCLIENTSServices">

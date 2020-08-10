@@ -25,7 +25,9 @@ namespace NQI_LIMS.Model.Models
         public string CATEGORY { get; set; }
 
         public string CITY { get; set; }
-
+        /// <summary>
+        /// 公司名
+        /// </summary>
         public string COMPNAME { get; set; }
 
         public string COUNTRY { get; set; }
@@ -44,6 +46,9 @@ namespace NQI_LIMS.Model.Models
 
         public string PRIMARYPHONE { get; set; }
 
+        /// <summary>
+        /// 单位编号
+        /// </summary>
         [SugarColumn(IsPrimaryKey = true)]
         public string RASCLIENTID { get; set; }
 
@@ -72,7 +77,9 @@ namespace NQI_LIMS.Model.Models
         public string COMPNAME_ENG { get; set; }
 
         public string SHORTNAME { get; set; }
-
+        /// <summary>
+        /// 地址
+        /// </summary>
         public string ADRESS { get; set; }
 
         public string PHONE { get; set; }
@@ -320,7 +327,9 @@ namespace NQI_LIMS.Model.Models
         public string ECONOMICTYPE { get; set; }
 
         public string SACCOUNTNAME { get; set; }
-
+        /// <summary>
+        /// 组织机构代码证
+        /// </summary>
         public string STAXCODE { get; set; }
 
         public string SDESPOITNAME { get; set; }

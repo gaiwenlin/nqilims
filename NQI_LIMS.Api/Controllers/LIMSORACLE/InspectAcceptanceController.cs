@@ -12,8 +12,12 @@ using NQI_LIMS.SwaggerHelper;
 
 namespace NQI_LIMS.Api.Controllers.LIMSORACLE
 {
+    /// <summary>
+    /// 监督抽查数据同步
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
+   // [Authorize(Permissions.Name)]
     public class InspectAcceptanceController : ControllerBase
     {
         private readonly IInspectAcceptanceServices _InspectAcceptanceServices;
@@ -26,11 +30,16 @@ namespace NQI_LIMS.Api.Controllers.LIMSORACLE
         }
 
         #region 保存抽查业务信息
+        /// <summary>
+        /// 保存抽查业务信息
+        /// </summary>
+        /// <param name="iModel"></param>
+        /// <returns></returns>
         [HttpPost]  
         [MustLogin]
         public ActionResult SaveInspectAcceptance([FromBody] InputInsepectAcceptanceModel iModel)
         {
-            bool jo = _InspectAcceptanceServices.SaveInspectAcceptance(_user.ID,iModel);
+            bool jo = _InspectAcceptanceServices.SaveInspectAcceptance(12,iModel);
             return MyResponse.Return<int>(jo?1:0).GetResult();
         }
         #endregion
