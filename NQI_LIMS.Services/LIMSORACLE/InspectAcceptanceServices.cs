@@ -42,6 +42,8 @@ namespace NQI_LIMS.Services
         {
             try
             {
+                model.PmPlanSubInfo.NotAllowNull("抽检信息");
+
                 #region 获取用户信息
                 var mUserInfo = _SysUserInfoServices.QueryById(iUserId).Result;//用户信息
                  #endregion
@@ -55,37 +57,37 @@ namespace NQI_LIMS.Services
                 RASCLIENTS mScdwInfor = null;
                 if (model.PmPlanSubInfo.CHECK_TYPE == "1")
                 {
-                    mScdwInfor = this.SaveRaseClient(model.PmProduceUnit.PRO_NAME, model.PmProduceUnit.PRO_ADDR, model.PmProduceUnit.PRO_TEL, mUserInfo.uRealName, model.Departments.DEPTNAME, model.PmProduceUnit.PRO_BUS_LICENCE, model.Departments.DEPT);
+                    mScdwInfor = this.SaveRaseClient(model.PmProduceUnit.PRO_NAME, model.PmProduceUnit.PRO_ADDR, model.PmProduceUnit.PRO_TEL, mUserInfo.uRealName, model.Department.DEPTNAME, model.PmProduceUnit.PRO_BUS_LICENCE, model.Department.DEPT);
                 }
                 //受检单位
                 RASCLIENTS mSjdwInfor = null;
                 if(model.PmPlanSubInfo.CHECK_TYPE == "2")
                 {
-                    mSjdwInfor = this.SaveRaseClient(model.PmCaryInfo.CARY_NAME, model.PmCaryInfo.CARY_ADDR, model.PmCaryInfo.CARY_TEL, mUserInfo.uRealName, model.Departments.DEPTNAME, model.PmCaryInfo.UNIFIED_SOCIAL_CREDIT_CODE, model.Departments.DEPT);
+                    mSjdwInfor = this.SaveRaseClient(model.PmCaryInfo.CARY_NAME, model.PmCaryInfo.CARY_ADDR, model.PmCaryInfo.CARY_TEL, mUserInfo.uRealName, model.Department.DEPTNAME, model.PmCaryInfo.UNIFIED_SOCIAL_CREDIT_CODE, model.Department.DEPT);
                 }
                 else if (model.PmPlanSubInfo.CHECK_TYPE == "3")
                 {
                     //网店信息
-                    mSjdwInfor = this.SaveRaseClient(model.PmEcPlatFormInfo.ONLINE_STORE_NAME, model.PmEcPlatFormInfo.ONLINE_STORE_ADDR, model.PmEcPlatFormInfo.ONLINE_STORE_CONTACT, mUserInfo.uRealName, model.Departments.DEPTNAME, "", model.Departments.DEPT);
+                    mSjdwInfor = this.SaveRaseClient(model.PmEcPlatFormInfo.ONLINE_STORE_NAME, model.PmEcPlatFormInfo.ONLINE_STORE_ADDR, model.PmEcPlatFormInfo.ONLINE_STORE_CONTACT, mUserInfo.uRealName, model.Department.DEPTNAME, "", model.Department.DEPT);
                 }
                 #endregion
 
                 #region 1. 受理单
                 FOLDERS folders = new FOLDERS();
                 folders.FOLDERNO = this.CreateFolderNo();//生成规则 
-                folders.DEPT = model.Departments.DEPT;
+                folders.DEPT = model.Department.DEPT;
                 folders.REMARKS = model.PmPlanSubInfo.REMARKS;
                 folders.ORIGSTS = "N";
                 folders.FLDSTS = "Draft";
                 folders.DISPSTS = "新建";
                 folders.SAMPLECLASSFORCCC = "3C样品种类名称";
                 folders.CODEOFINSPECTIONORG = "承检机构代码";
-                folders.DETECTIONFORSPOTCHECK = model.AddSupervisePlan.TASKCLASS;
-                folders.TESTORGREGFORM = model.Departments.DEPTNAME;
-                folders.TESTPLACE = model.Departments.LOCATION;
+                folders.DETECTIONFORSPOTCHECK = model.SupervisePlanInfo.TASKCLASS;
+                folders.TESTORGREGFORM = model.Department.DEPTNAME;
+                folders.TESTPLACE = model.Department.LOCATION;
                 folders.TESTTYPE = "01";
-                folders.PLANNO = model.AddSupervisePlan.PLANNO;
-                folders.TASKSOURCE = model.AddSupervisePlan.TASKSOURCE;
+                folders.PLANNO = model.SupervisePlanInfo.PLANNO;
+                folders.TASKSOURCE = model.SupervisePlanInfo.TASKSOURCE;
                 folders.TESTTASKNOFORCCC = "委托单位协议编号";
                 //生产单位
                 folders.COMPANYNOOFPRODUCTIONORG = mScdwInfor == null ? null : mScdwInfor.RASCLIENTID;
@@ -100,9 +102,9 @@ namespace NQI_LIMS.Services
                 folders.ACCEPTER = mUserInfo.uRealName;
                 folders.ACCEPTDATE = DateTime.Now;
                 //委托单位
-                folders.NAMEOFENTRUSTORG = model.AddSupervisePlan.TASKSOURCE;
+                folders.NAMEOFENTRUSTORG = model.SupervisePlanInfo.TASKSOURCE;
                 folders.SAMPLESOURCEREGFORM = "抽样";
-                folders.DIVISIONCODE = model.Divisions.DIVISIONCODE;
+                folders.DIVISIONCODE = model.Division.DIVISIONCODE;
                 folders.PAYSTS = "N";
                 folders.LOGDATE = DateTime.Now;
                 folders.ISSUBCONTRACT = "不同意";
@@ -139,8 +141,8 @@ namespace NQI_LIMS.Services
                 preoders.TOTALQUANTITY = model.PmPlanSubInfo.GOODS_CHECK_NUM;
                 preoders.SAMPLESTATE = "封样完好、符合检验要求";
                 preoders.REQUIREDCOMPLETIONDATE = DateTime.Today.AddDays(7);
-                preoders.DEPT = model.Departments.DEPT;
-                preoders.DIVISIONCODE = model.Divisions.DIVISIONCODE;
+                preoders.DEPT = model.Department.DEPT;
+                preoders.DIVISIONCODE = model.Division.DIVISIONCODE;
                 preoders.ISRETURNSAMPLE = "N";
                 preoders.ISEMERGENCY = "0";
                 preoders.PAYSTS = "未缴费";
@@ -183,8 +185,8 @@ namespace NQI_LIMS.Services
                 orders.DISPSTS = "新建";
                 orders.CREATETIME = DateTime.Now;
                 orders.SAMPLENAME = model.PmPlanSubInfo.GOODS_NAME ;
-                orders.DEPT = model.Departments.DEPT;
-                orders.DIVISIONCODE = model.Divisions.DIVISIONCODE;
+                orders.DEPT = model.Department.DEPT;
+                orders.DIVISIONCODE = model.Division.DIVISIONCODE;
                 orders.ISMAKESAMPLE = "N";
                 orders.ISPREPARE = "N";
                 orders.ISCHOICE = "N";

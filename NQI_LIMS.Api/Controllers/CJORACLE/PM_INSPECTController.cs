@@ -12,6 +12,9 @@ using NQI_LIMS.SwaggerHelper;
 
 namespace NQI_LIMS.Api.Controllers.CJORACLE
 {
+    /// <summary>
+    /// 查询抽检数据
+    /// </summary>
     [Route("api/[controller]/[action]")]
     [ApiController]
    // [Authorize(Permissions.Name)]
@@ -26,6 +29,11 @@ namespace NQI_LIMS.Api.Controllers.CJORACLE
         }
 
         #region 根据抽查批次号获取抽查信息
+        /// <summary>
+        /// 根据抽检批号查询数据，包括企业信息等
+        /// </summary>
+        /// <param name="iCodeNum"></param>
+        /// <returns></returns>
         [HttpPost]
         [MustLogin]
         public ActionResult GetPmInsPectByCode(string iCodeNum)

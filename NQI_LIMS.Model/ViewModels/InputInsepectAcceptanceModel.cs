@@ -14,15 +14,15 @@ namespace NQI_LIMS.Model.ViewModels
         /// <summary>
         /// LIMS任务
         /// </summary>
-        public ADD_SUPERVISEPLAN AddSupervisePlan;
+        public ADD_SUPERVISEPLAN SupervisePlanInfo;
         /// <summary>
         /// LIMS部门
         /// </summary>
-        public DEPARTMENTS Departments;
+        public DEPARTMENTS Department;
         /// <summary>
         /// LIMS中心
         /// </summary>
-        public DIVISIONS Divisions;
+        public DIVISIONS Division;
         /// <summary>
         /// 批次
         /// </summary>

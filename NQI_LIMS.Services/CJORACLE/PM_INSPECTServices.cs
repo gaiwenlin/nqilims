@@ -57,6 +57,7 @@ namespace NQI_LIMS.Services.localhost
                 #region 获取用户部门信息****查询NQI_LIMS********
 
                 var mUserInfo = _SysUserInfoServices.QueryById(iUserId).Result;//用户信息
+                mUserInfo.addr.NotAllowNullOrEmpty("部门编号");
                 /*
                  20200801 没有组织架构，后期要增加，
                 临时在adress字段 里面配置用户的部门信息
@@ -75,6 +76,10 @@ namespace NQI_LIMS.Services.localhost
                 if (!string.IsNullOrEmpty(mPmPlanSubInfo.PLAN_CODE))
                 {
                     mPmPlanInfo = _dal.GetPmPlanByCode(mPmPlanSubInfo.PLAN_CODE);
+                }
+                else
+                {
+                    throw new MyException("为查询到对应编号的数据。", data: iCodeNum);
                 }
                 #endregion
 
