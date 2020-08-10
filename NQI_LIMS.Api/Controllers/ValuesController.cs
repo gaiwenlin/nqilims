@@ -25,7 +25,7 @@ namespace NQI_LIMS.Controllers
     //[Authorize(Roles = "Admin,Client")]
     //[Authorize(Policy = "SystemOrAdmin")]
     //[Authorize(PermissionNames.Permission)]
-    [Authorize]
+    //[Authorize]
     public class ValuesController : ControllerBase
     {
         private IMapper _mapper;
